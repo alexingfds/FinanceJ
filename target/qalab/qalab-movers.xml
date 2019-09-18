@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE moversreport [
+<!ELEMENT moversreport (types,datethreshold,enddatethreshold,daterun,up?,down?)>
+<!ELEMENT types (#PCDATA)>
+<!ELEMENT datethreshold (#PCDATA)>
+<!ELEMENT enddatethreshold (#PCDATA)>
+<!ELEMENT daterun (#PCDATA)>
+<!ELEMENT up (file+)>
+<!ELEMENT down (file+)>
+<!ELEMENT file (diff+)>
+<!ATTLIST file name CDATA #REQUIRED>
+<!ATTLIST file path CDATA #REQUIRED>
+<!ELEMENT diff EMPTY>
+<!ATTLIST diff previousrun CDATA #REQUIRED>
+<!ATTLIST diff currentrun CDATA #REQUIRED>
+<!ATTLIST diff type CDATA #REQUIRED>
+<!ATTLIST diff previouserrors CDATA #REQUIRED>
+<!ATTLIST diff currenterrors CDATA #REQUIRED>
+<!ATTLIST diff diff CDATA #REQUIRED>
+]>
+<moversreport>
+ <types>checkstyle,pmd,findbugs,cobertura-line,cobertura-branch</types>
+ <datethreshold>2019-09-13 05:28:37</datethreshold>
+ <enddatethreshold>2019-09-17 11:28:37</enddatethreshold>
+ <daterun>2019-09-17 11:28:37</daterun>
+ <up>
+  <file name="ca_etsmtl_log240_financej_Account.java" path="ca/etsmtl/log240/financej/Account.java">
+   <diff previousrun="-" currentrun="2019-09-17" type="pmd" previouserrors="0" currenterrors="17" diff="17"/>
+   <diff previousrun="-" currentrun="2019-09-17" type="checkstyle" previouserrors="0" currenterrors="507" diff="507"/>
+  </file>
+  <file name="ca_etsmtl_log240_financej_App.java" path="ca/etsmtl/log240/financej/App.java">
+   <diff previousrun="-" currentrun="2019-09-17" type="pmd" previouserrors="0" currenterrors="1" diff="1"/>
+   <diff previousrun="-" currentrun="2019-09-17" type="checkstyle" previouserrors="0" currenterrors="10" diff="10"/>
+  </file>
+  <file name="ca_etsmtl_log240_financej_Category.java" path="ca/etsmtl/log240/financej/Category.java">
+   <diff previousrun="-" currentrun="2019-09-17" type="pmd" previouserrors="0" currenterrors="18" diff="18"/>
+   <diff previousrun="-" currentrun="2019-09-17" type="checkstyle" previouserrors="0" currenterrors="178" diff="178"/>
+  </file>
+  <file name="ca_etsmtl_log240_financej_DBUtils.java" path="ca/etsmtl/log240/financej/DBUtils.java">
+   <diff previousrun="-" currentrun="2019-09-17" type="pmd" previouserrors="0" currenterrors="19" diff="19"/>
+   <diff previousrun="-" currentrun="2019-09-17" type="checkstyle" previouserrors="0" currenterrors="45" diff="45"/>
+  </file>
+  <file name="ca_etsmtl_log240_financej_FinanceJ.java" path="ca/etsmtl/log240/financej/FinanceJ.java">
+   <diff previousrun="-" currentrun="2019-09-17" type="pmd" previouserrors="0" currenterrors="26" diff="26"/>
+   <diff previousrun="-" currentrun="2019-09-17" type="checkstyle" previouserrors="0" currenterrors="236" diff="236"/>
+  </file>
+  <file name="ca_etsmtl_log240_financej_Ledger.java" path="ca/etsmtl/log240/financej/Ledger.java">
+   <diff previousrun="-" currentrun="2019-09-17" type="pmd" previouserrors="0" currenterrors="29" diff="29"/>
+   <diff previousrun="-" currentrun="2019-09-17" type="checkstyle" previouserrors="0" currenterrors="349" diff="349"/>
+  </file>
+  <file name="ca_etsmtl_log240_financej_Reports.java" path="ca/etsmtl/log240/financej/Reports.java">
+   <diff previousrun="-" currentrun="2019-09-17" type="pmd" previouserrors="0" currenterrors="21" diff="21"/>
+   <diff previousrun="-" currentrun="2019-09-17" type="checkstyle" previouserrors="0" currenterrors="200" diff="200"/>
+  </file>
+ </up>
+ <down>
+ </down>
+</moversreport>
