@@ -1,62 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
+    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/log/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c10.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c101.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c111.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c121.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c130.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c141.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c150.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c161.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c171.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c180.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c191.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c1a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c1b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c1c0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c1d1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c1e0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c1f1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c20.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c200.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c211.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c221.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c230.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c241.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c251.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c260.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c271.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c281.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c290.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c2a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c2b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c2c1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c2d0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c2e1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c2f0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c300.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c31.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c311.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c321.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c331.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c340.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c351.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c361.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c371.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c380.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c391.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c3a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c3b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c3c0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c3d1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c3e1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c3f1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c400.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c41.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c411.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c421.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c430.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c441.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c451.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c461.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c470.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c481.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4b0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4d0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c51.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c60.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c71.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c81.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c90.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/ca1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/cb1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/cc0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/cd1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/ce1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/seg0/cf0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qalab.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
-    <option name="width" value="981" />
-    <option name="height" value="1032" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="financejteam03" type="b2602c69:ProjectViewProjectNode" />
-              <item name="financejteam03" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1QhN5nosjGsmIkrknes9AmHUgVL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568217055268" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="profiler.jvm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -70,6 +132,38 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="financej-team03 [compile]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="compile" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.financej-team03 [compile]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -82,72 +176,32 @@
       <updated>1568216771807</updated>
       <workItem from="1568216775689" duration="284000" />
       <workItem from="1568217251231" duration="611000" />
+      <workItem from="1568218689957" duration="1729000" />
+      <workItem from="1568234832054" duration="7078000" />
+      <workItem from="1568316498506" duration="7118000" />
+      <workItem from="1568688431936" duration="10494000" />
+      <workItem from="1568732337791" duration="1961000" />
+      <workItem from="1568818861766" duration="482000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="895000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3285968" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
