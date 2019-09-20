@@ -20,9 +20,9 @@
 ]>
 <moversreport>
  <types>checkstyle,pmd,findbugs,cobertura-line,cobertura-branch</types>
- <datethreshold>2019-09-18 06:05:19</datethreshold>
- <enddatethreshold>2019-09-20 12:05:19</enddatethreshold>
- <daterun>2019-09-20 12:05:19</daterun>
+ <datethreshold>2019-09-18 08:34:01</datethreshold>
+ <enddatethreshold>2019-09-20 14:34:01</enddatethreshold>
+ <daterun>2019-09-20 14:34:01</daterun>
  <up>
   <file name="ca_etsmtl_log240_financej_Account.java" path="ca/etsmtl/log240/financej/Account.java">
    <diff previousrun="-" currentrun="2019-09-20" type="pmd" previouserrors="0" currenterrors="17" diff="17"/>
