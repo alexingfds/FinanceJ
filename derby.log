@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Tue Sep 17 11:04:34 EDT 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-016d-3fc0-f5eb-000009d87278 
-on database directory C:\Users\medy\IdeaProjects\FinanceJ-Team03\FinanceJDB with class loader java.net.URLClassLoader@635072fa 
+Wed Sep 18 15:03:16 EDT 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-016d-45c1-dea4-00000a670218 
+on database directory C:\Users\medy\IdeaProjects\FinanceJ-Team03\FinanceJDB with class loader java.net.URLClassLoader@1ad6d7fc 
 Loaded from file:/C:/Users/medy/.m2/repository/org/apache/derby/derby/10.11.1.1/derby-10.11.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_221-b11
@@ -11,9 +11,3 @@ os.arch=amd64
 os.version=10.0
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
-----------------------------------------------------------------
-Tue Sep 17 11:05:33 EDT 2019: Shutting down Derby engine
-----------------------------------------------------------------
-Tue Sep 17 11:05:33 EDT 2019:
-Shutting down instance a816c00e-016d-3fc0-f5eb-000009d87278 on database directory C:\Users\medy\IdeaProjects\FinanceJ-Team03\FinanceJDB with class loader java.net.URLClassLoader@635072fa 
-----------------------------------------------------------------

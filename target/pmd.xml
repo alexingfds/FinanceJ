@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.5" timestamp="2019-09-17T11:28:35.964">
+<pmd version="4.2.5" timestamp="2019-09-20T12:05:17.757">
 <file name="C:\Users\medy\IdeaProjects\FinanceJ-Team03\src\main\java\ca\etsmtl\log240\financej\Account.java">
 <violation beginline="19" endline="19" begincolumn="17" endcolumn="39" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="Account" variable="conn" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
 Perhaps 'conn' could be replaced by a local variable.
