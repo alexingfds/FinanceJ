@@ -1,64 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="Changement de projet husqua etape 4.3">
+    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/checkstyle-cachefile" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkstyle-cachefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-site/xdoc/movers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-site/xdoc/movers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pmd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/pmd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/qalab/qalab-movers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/qalab/qalab-movers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/Account.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/Account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/App.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/App.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/Category.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/Category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/DBUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/DBUtils.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/FinanceJ.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/FinanceJ.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/Ledger.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/Ledger.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/Reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/Reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/Account.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/Account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/App.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/App.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/Category.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/Category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/DBUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/DBUtils.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/FinanceJ.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/FinanceJ.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/Ledger.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/Ledger.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/Reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/class-use/Reports.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/ca/etsmtl/log240/financej/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/index-all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/serialized-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/movers.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/movers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/pmd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/pmd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_Account.java.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_Account.java.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_App.java.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_App.java.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_Category.java.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_Category.java.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_DBUtils.java.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_DBUtils.java.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_FinanceJ.java.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_FinanceJ.java.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_Ledger.java.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_Ledger.java.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_Reports.java.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/qalab/ca_etsmtl_log240_financej_Reports.java.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/qalab/summary.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/qalab/summary.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/allclasses-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/allclasses-noframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/AppTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/AppTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/class-use/AppTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/class-use/AppTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/package-frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/ca/etsmtl/log240/financej/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/index-all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/testapidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/testapidocs/overview-tree.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +94,7 @@
       <workItem from="1568833184909" duration="268000" />
       <workItem from="1568833904777" duration="46000" />
       <workItem from="1568994653011" duration="7525000" />
-      <workItem from="1569004011344" duration="3029000" />
+      <workItem from="1569004011344" duration="4695000" />
     </task>
     <task id="LOCAL-00001" summary="Changement de projet husqua etape 4.3">
       <created>1568819538099</created>
@@ -173,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568995627879</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changement de projet husqua etape 4.3">
+      <created>1569007718564</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569007718565</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
