@@ -46,7 +46,7 @@ public class Account extends javax.swing.JDialog {
 		NameTextField = new javax.swing.JTextField();
 		DescriptionTextField = new javax.swing.JTextField();
 		jLabel1 = new javax.swing.JLabel();
-		jLabel2 = new javax.swing.JLabel();
+		JLabel jLabel2 = new JLabel();
 
 		setTitle("Accounts");
 		setModal(true);
@@ -88,7 +88,7 @@ public class Account extends javax.swing.JDialog {
 		addAccountButton.setText("Add Account");
 		addAccountButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				AddAccountButtonActionPerformed(evt);
+				AddAccountButtonActionPerformed();
 			}
 		});
 
@@ -178,7 +178,7 @@ public class Account extends javax.swing.JDialog {
 		}
 	}//GEN-LAST:event_DeleteAccountButtonActionPerformed
 
-	private void AddAccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddAccountButtonActionPerformed
+	private void AddAccountButtonActionPerformed() {//GEN-FIRST:event_AddAccountButtonActionPerformed
 		int ReturnCode;
 
 		ReturnCode = dataModel.AddAccount(NameTextField.getText(), DescriptionTextField.getText());
@@ -215,14 +215,13 @@ public class Account extends javax.swing.JDialog {
 	private javax.swing.JTextField DescriptionTextField;
 	private javax.swing.JTextField NameTextField;
 	private javax.swing.JLabel jLabel1;
-	private javax.swing.JLabel jLabel2;
 	// End of variables declaration//GEN-END:variables
 }
 
 class AccountListTableModel extends AbstractTableModel {
 
 	private String[] columnNames = {"Name", "Description"};
-	private Connection conn = null;
+	private Connection conn;
 
 	public AccountListTableModel(Connection DBConn) {
 		conn = DBConn;
@@ -296,11 +295,7 @@ class AccountListTableModel extends AbstractTableModel {
 		//no matter where the cell appears onscreen.
 
 
-		if (col == 0) {
-			return false;
-		} else {
-			return true;
-		}
+		return col != 0;
 	}
 
 	public void setValueAt(Object value, int row, int col) {
@@ -321,7 +316,7 @@ class AccountListTableModel extends AbstractTableModel {
 		}
 	}
 
-	public void DeleteAccount(int row) {
+	void DeleteAccount(int row) {
 		Statement s;
 		String AccountName;
 		String SQLString;

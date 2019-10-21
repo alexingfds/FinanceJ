@@ -27,6 +27,8 @@
         <summaryresult date="2019-10-18" filecount="7" statvalue="131" type="pmd"/>
         <summaryresult date="2019-10-19" filecount="7" statvalue="1525" type="checkstyle"/>
         <summaryresult date="2019-10-19" filecount="6" statvalue="99" type="pmd"/>
+        <summaryresult date="2019-10-20" filecount="8" statvalue="1502" type="checkstyle"/>
+        <summaryresult date="2019-10-20" filecount="7" statvalue="118" type="pmd"/>
     </summary>
     <file id="ca_etsmtl_log240_financej_Account.java" path="ca/etsmtl/log240/financej/Account.java">
         <result date="2019-09-17" statvalue="507" type="checkstyle"/>
@@ -39,6 +41,8 @@
         <result date="2019-10-18" statvalue="17" type="pmd"/>
         <result date="2019-10-19" statvalue="487" type="checkstyle"/>
         <result date="2019-10-19" statvalue="11" type="pmd"/>
+        <result date="2019-10-20" statvalue="479" type="checkstyle"/>
+        <result date="2019-10-20" statvalue="9" type="pmd"/>
     </file>
     <file id="ca_etsmtl_log240_financej_App.java" path="ca/etsmtl/log240/financej/App.java">
         <result date="2019-09-17" statvalue="10" type="checkstyle"/>
@@ -51,6 +55,8 @@
         <result date="2019-10-18" statvalue="1" type="pmd"/>
         <result date="2019-10-19" statvalue="10" type="checkstyle"/>
         <result date="2019-10-19" statvalue="1" type="pmd"/>
+        <result date="2019-10-20" statvalue="10" type="checkstyle"/>
+        <result date="2019-10-20" statvalue="1" type="pmd"/>
     </file>
     <file id="ca_etsmtl_log240_financej_Category.java" path="ca/etsmtl/log240/financej/Category.java">
         <result date="2019-09-17" statvalue="178" type="checkstyle"/>
@@ -63,6 +69,8 @@
         <result date="2019-10-18" statvalue="18" type="pmd"/>
         <result date="2019-10-19" statvalue="177" type="checkstyle"/>
         <result date="2019-10-19" statvalue="18" type="pmd"/>
+        <result date="2019-10-20" statvalue="177" type="checkstyle"/>
+        <result date="2019-10-20" statvalue="18" type="pmd"/>
     </file>
     <file id="ca_etsmtl_log240_financej_DBUtils.java" path="ca/etsmtl/log240/financej/DBUtils.java">
         <result date="2019-09-17" statvalue="45" type="checkstyle"/>
@@ -75,6 +83,8 @@
         <result date="2019-10-18" statvalue="19" type="pmd"/>
         <result date="2019-10-19" statvalue="44" type="checkstyle"/>
         <result date="2019-10-19" statvalue="19" type="pmd"/>
+        <result date="2019-10-20" statvalue="44" type="checkstyle"/>
+        <result date="2019-10-20" statvalue="19" type="pmd"/>
     </file>
     <file id="ca_etsmtl_log240_financej_FinanceJ.java" path="ca/etsmtl/log240/financej/FinanceJ.java">
         <result date="2019-09-17" statvalue="236" type="checkstyle"/>
@@ -86,6 +96,8 @@
         <result date="2019-10-18" statvalue="235" type="checkstyle"/>
         <result date="2019-10-18" statvalue="26" type="pmd"/>
         <result date="2019-10-19" statvalue="264" type="checkstyle"/>
+        <result date="2019-10-20" statvalue="221" type="checkstyle"/>
+        <result date="2019-10-20" statvalue="24" type="pmd"/>
     </file>
     <file id="ca_etsmtl_log240_financej_Ledger.java" path="ca/etsmtl/log240/financej/Ledger.java">
         <result date="2019-09-17" statvalue="349" type="checkstyle"/>
@@ -98,6 +110,8 @@
         <result date="2019-10-18" statvalue="29" type="pmd"/>
         <result date="2019-10-19" statvalue="348" type="checkstyle"/>
         <result date="2019-10-19" statvalue="29" type="pmd"/>
+        <result date="2019-10-20" statvalue="345" type="checkstyle"/>
+        <result date="2019-10-20" statvalue="29" type="pmd"/>
     </file>
     <file id="ca_etsmtl_log240_financej_Reports.java" path="ca/etsmtl/log240/financej/Reports.java">
         <result date="2019-09-17" statvalue="200" type="checkstyle"/>
@@ -110,5 +124,10 @@
         <result date="2019-10-18" statvalue="21" type="pmd"/>
         <result date="2019-10-19" statvalue="195" type="checkstyle"/>
         <result date="2019-10-19" statvalue="21" type="pmd"/>
+        <result date="2019-10-20" statvalue="192" type="checkstyle"/>
+        <result date="2019-10-20" statvalue="18" type="pmd"/>
+    </file>
+    <file id="ca_etsmtl_log240_financej_Login.java" path="ca/etsmtl/log240/financej/Login.java">
+        <result date="2019-10-20" statvalue="34" type="checkstyle"/>
     </file>
 </qalab>
