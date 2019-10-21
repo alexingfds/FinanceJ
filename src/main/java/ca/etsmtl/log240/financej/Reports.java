@@ -63,7 +63,7 @@ public class Reports extends javax.swing.JDialog {
         TransactionsByAccountButton.setText("Transactions by Account");
         TransactionsByAccountButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TransactionsByAccountButtonActionPerformed(evt);
+                TransactionsByAccountButtonActionPerformed();
             }
         });
 
@@ -119,7 +119,7 @@ public class Reports extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    private void TransactionsByAccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TransactionsByAccountButtonActionPerformed
+    private void TransactionsByAccountButtonActionPerformed() {//GEN-FIRST:event_TransactionsByAccountButtonActionPerformed
         
         try {
             TransactionAccountReport TransactionReportInstance = new TransactionAccountReport(conn, StartDateTextField.getText(), EndDateTextField.getText());
@@ -268,7 +268,7 @@ class TransactionAccountReport {
                   pw.println("</tr>");
                   total += LedgerResult.getFloat(5);
                 }
-                
+
                 pw.println("<tr>");
                 pw.printf("<td colspan=\"4\">Total</td>");
                 pw.printf("<td>$%12.2f</td>", total);
@@ -373,7 +373,7 @@ class TransactionCategoryReport {
                   pw.println("</tr>");
                   total += LedgerResult.getFloat(5);
                 }
-                
+
                 pw.println("<tr>");
                 pw.printf("<td colspan=\"2\">Budget</td>");
                 pw.printf("<td>$%12.2f</td>", CategoryBudget);
@@ -387,7 +387,7 @@ class TransactionCategoryReport {
             }
         }
     }
-    
+
     public void MakeReportFooter() {
         pw.println("</html>");
     }

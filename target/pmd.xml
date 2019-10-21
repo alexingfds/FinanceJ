@@ -1,55 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.5" timestamp="2019-09-20T14:33:59.555">
+<pmd version="4.2.5" timestamp="2019-10-19T00:48:50.540">
 <file name="C:\Users\medy\IdeaProjects\FinanceJ-Team03\src\main\java\ca\etsmtl\log240\financej\Account.java">
-<violation beginline="19" endline="19" begincolumn="17" endcolumn="39" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="Account" variable="conn" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'conn' could be replaced by a local variable.
-</violation>
-<violation beginline="218" endline="218" begincolumn="17" endcolumn="53" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="Account" variable="AddAccountButton" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'AddAccountButton' could be replaced by a local variable.
-</violation>
-<violation beginline="219" endline="219" begincolumn="17" endcolumn="48" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="Account" variable="CloseButton" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'CloseButton' could be replaced by a local variable.
-</violation>
-<violation beginline="220" endline="220" begincolumn="17" endcolumn="56" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="Account" variable="DeleteAccountButton" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'DeleteAccountButton' could be replaced by a local variable.
-</violation>
-<violation beginline="223" endline="223" begincolumn="17" endcolumn="43" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="Account" variable="jLabel1" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
+<violation beginline="217" endline="217" begincolumn="17" endcolumn="43" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="Account" variable="jLabel1" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
 Perhaps 'jLabel1' could be replaced by a local variable.
 </violation>
-<violation beginline="224" endline="224" begincolumn="17" endcolumn="43" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="Account" variable="jLabel2" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
+<violation beginline="218" endline="218" begincolumn="17" endcolumn="43" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="Account" variable="jLabel2" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
 Perhaps 'jLabel2' could be replaced by a local variable.
 </violation>
-<violation beginline="225" endline="225" begincolumn="17" endcolumn="43" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="Account" variable="jPanel1" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'jPanel1' could be replaced by a local variable.
-</violation>
-<violation beginline="226" endline="226" begincolumn="17" endcolumn="53" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="Account" variable="jScrollPane1" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'jScrollPane1' could be replaced by a local variable.
-</violation>
-<violation beginline="232" endline="232" begincolumn="26" endcolumn="36" rule="ImmutableField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" variable="columnNames" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ImmutableField" priority="3">
+<violation beginline="224" endline="224" begincolumn="26" endcolumn="36" rule="ImmutableField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" variable="columnNames" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ImmutableField" priority="3">
 Private field 'columnNames' could be made final; it is only initialized in the declaration or constructor.
 </violation>
-<violation beginline="233" endline="233" begincolumn="28" endcolumn="31" rule="ImmutableField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" variable="conn" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ImmutableField" priority="3">
+<violation beginline="225" endline="225" begincolumn="28" endcolumn="31" rule="ImmutableField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" variable="conn" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ImmutableField" priority="3">
 Private field 'conn' could be made final; it is only initialized in the declaration or constructor.
 </violation>
-<violation beginline="244" endline="244" begincolumn="27" endcolumn="39" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="getRowCount" variable="AccountResult" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
+<violation beginline="236" endline="236" begincolumn="27" endcolumn="39" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="getRowCount" variable="AccountResult" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
 Ensure that resources like this ResultSet object are closed after use
 </violation>
-<violation beginline="245" endline="245" begincolumn="27" endcolumn="27" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="getRowCount" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
+<violation beginline="237" endline="237" begincolumn="27" endcolumn="27" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="getRowCount" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
 Ensure that resources like this Statement object are closed after use
 </violation>
-<violation beginline="268" endline="268" begincolumn="27" endcolumn="39" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="getValueAt" variable="AccountResult" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
+<violation beginline="260" endline="260" begincolumn="27" endcolumn="39" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="getValueAt" variable="AccountResult" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
 Ensure that resources like this ResultSet object are closed after use
 </violation>
-<violation beginline="269" endline="269" begincolumn="27" endcolumn="27" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="getValueAt" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
+<violation beginline="261" endline="261" begincolumn="27" endcolumn="27" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="getValueAt" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
 Ensure that resources like this Statement object are closed after use
 </violation>
-<violation beginline="307" endline="311" begincolumn="17" endcolumn="17" rule="SimplifyBooleanReturns" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="isCellEditable" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SimplifyBooleanReturns" priority="3">
+<violation beginline="299" endline="303" begincolumn="17" endcolumn="17" rule="SimplifyBooleanReturns" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="isCellEditable" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SimplifyBooleanReturns" priority="3">
 Avoid unnecessary if..then..else statements when returning a boolean
 </violation>
-<violation beginline="320" endline="320" begincolumn="35" endcolumn="35" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="setValueAt" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
+<violation beginline="312" endline="312" begincolumn="35" endcolumn="35" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="setValueAt" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
 Ensure that resources like this Statement object are closed after use
 </violation>
-<violation beginline="333" endline="333" begincolumn="27" endcolumn="27" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="DeleteAccount" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
+<violation beginline="325" endline="325" begincolumn="27" endcolumn="27" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountListTableModel" method="DeleteAccount" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
 Ensure that resources like this Statement object are closed after use
 </violation>
 </file>
@@ -171,86 +153,6 @@ Position literals first in String comparisons
 </violation>
 <violation beginline="156" endline="156" begincolumn="19" endcolumn="39" rule="PositionLiteralsFirstInComparisons" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="DBUtils" method="main" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#PositionLiteralsFirstInComparisons" priority="3">
 Position literals first in String comparisons
-</violation>
-</file>
-<file name="C:\Users\medy\IdeaProjects\FinanceJ-Team03\src\main\java\ca\etsmtl\log240\financej\FinanceJ.java">
-<violation beginline="26" endline="26" begincolumn="21" endcolumn="33" rule="ImmutableField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="AccountDialog" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ImmutableField" priority="3">
-Private field 'AccountDialog' could be made final; it is only initialized in the declaration or constructor.
-</violation>
-<violation beginline="27" endline="27" begincolumn="22" endcolumn="35" rule="ImmutableField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="CategoryDialog" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ImmutableField" priority="3">
-Private field 'CategoryDialog' could be made final; it is only initialized in the declaration or constructor.
-</violation>
-<violation beginline="28" endline="28" begincolumn="20" endcolumn="31" rule="ImmutableField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="LedgerDialog" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ImmutableField" priority="3">
-Private field 'LedgerDialog' could be made final; it is only initialized in the declaration or constructor.
-</violation>
-<violation beginline="29" endline="29" begincolumn="21" endcolumn="33" rule="ImmutableField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="ReportsDialog" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ImmutableField" priority="3">
-Private field 'ReportsDialog' could be made final; it is only initialized in the declaration or constructor.
-</violation>
-<violation beginline="30" endline="30" begincolumn="36" endcolumn="44" rule="ImmutableField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="dataModel" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ImmutableField" priority="3">
-Private field 'dataModel' could be made final; it is only initialized in the declaration or constructor.
-</violation>
-<violation beginline="72" endline="72" begincolumn="19" endcolumn="19" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" method="CreateDBTables" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
-Ensure that resources like this Statement object are closed after use
-</violation>
-<violation beginline="107" endline="107" begincolumn="13" endcolumn="65" rule="PositionLiteralsFirstInComparisons" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" method="ShutdownDB" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#PositionLiteralsFirstInComparisons" priority="3">
-Position literals first in String comparisons
-</violation>
-<violation beginline="116" endline="120" begincolumn="13" endcolumn="13" rule="ConfusingTernary" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" method="ShutdownDB" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ConfusingTernary" priority="3">
-Avoid if (x != y) ..; else ..;
-</violation>
-<violation beginline="125" endline="125" begincolumn="19" endcolumn="30" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" method="UpdateTotal" variable="LedgerResult" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
-Ensure that resources like this ResultSet object are closed after use
-</violation>
-<violation beginline="126" endline="126" begincolumn="19" endcolumn="19" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" method="UpdateTotal" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
-Ensure that resources like this Statement object are closed after use
-</violation>
-<violation beginline="159" endline="159" begincolumn="9" endcolumn="24" rule="ConstructorCallsOverridableMethod" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ConstructorCallsOverridableMethod" priority="1">
-Overridable method 'formWindowActivated' called during object construction
-</violation>
-<violation beginline="181" endline="181" begincolumn="9" endcolumn="21" rule="ConstructorCallsOverridableMethod" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ConstructorCallsOverridableMethod" priority="1">
-Overridable method 'UpdateTotal' called during object construction
-</violation>
-<violation beginline="382" endline="382" begincolumn="13" endcolumn="46" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="AccountButton" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'AccountButton' could be replaced by a local variable.
-</violation>
-<violation beginline="384" endline="384" begincolumn="13" endcolumn="49" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="CategoriesButton" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'CategoriesButton' could be replaced by a local variable.
-</violation>
-<violation beginline="385" endline="385" begincolumn="13" endcolumn="43" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="ExitButton" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'ExitButton' could be replaced by a local variable.
-</violation>
-<violation beginline="386" endline="386" begincolumn="13" endcolumn="45" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="LedgerButton" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'LedgerButton' could be replaced by a local variable.
-</violation>
-<violation beginline="387" endline="387" begincolumn="13" endcolumn="46" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="ReportsButton" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'ReportsButton' could be replaced by a local variable.
-</violation>
-<violation beginline="389" endline="389" begincolumn="13" endcolumn="39" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="jLabel1" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'jLabel1' could be replaced by a local variable.
-</violation>
-<violation beginline="390" endline="390" begincolumn="13" endcolumn="49" rule="SingularField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" variable="jScrollPane1" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="3">
-Perhaps 'jScrollPane1' could be replaced by a local variable.
-</violation>
-<violation beginline="408" endline="408" begincolumn="48" endcolumn="51" rule="AvoidReassigningParameters" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="FinanceJ" method="SQLExceptionPrint" variable="sqle" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#AvoidReassigningParameters" priority="2">
-Avoid reassigning parameters such as 'sqle'
-</violation>
-<violation beginline="424" endline="424" begincolumn="22" endcolumn="32" rule="ImmutableField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountTotalTableModel" variable="columnNames" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ImmutableField" priority="3">
-Private field 'columnNames' could be made final; it is only initialized in the declaration or constructor.
-</violation>
-<violation beginline="425" endline="425" begincolumn="24" endcolumn="27" rule="ImmutableField" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountTotalTableModel" variable="conn" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#ImmutableField" priority="3">
-Private field 'conn' could be made final; it is only initialized in the declaration or constructor.
-</violation>
-<violation beginline="436" endline="436" begincolumn="19" endcolumn="31" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountTotalTableModel" method="getRowCount" variable="AccountResult" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
-Ensure that resources like this ResultSet object are closed after use
-</violation>
-<violation beginline="437" endline="437" begincolumn="19" endcolumn="19" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountTotalTableModel" method="getRowCount" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
-Ensure that resources like this Statement object are closed after use
-</violation>
-<violation beginline="461" endline="461" begincolumn="19" endcolumn="31" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountTotalTableModel" method="getValueAt" variable="AccountResult" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
-Ensure that resources like this ResultSet object are closed after use
-</violation>
-<violation beginline="462" endline="462" begincolumn="19" endcolumn="19" rule="CloseResource" ruleset="Design Rules" package="ca.etsmtl.log240.financej" class="AccountTotalTableModel" method="getValueAt" variable="s" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#CloseResource" priority="3">
-Ensure that resources like this Statement object are closed after use
 </violation>
 </file>
 <file name="C:\Users\medy\IdeaProjects\FinanceJ-Team03\src\main\java\ca\etsmtl\log240\financej\Ledger.java">

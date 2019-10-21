@@ -6,10 +6,10 @@ package ca.etsmtl.log240.financej;
  */
 
 
-import java.sql.*;
-import javax.swing.table.*;
 import javax.swing.*;
-import java.awt.Color;
+import javax.swing.table.AbstractTableModel;
+import java.awt.*;
+import java.sql.*;
 
 /**
  *
@@ -23,6 +23,7 @@ public class FinanceJ extends javax.swing.JFrame {
     // define the Derby connection URL to use 
     private static String connectionURL = "jdbc:derby:" + dbName + ";create=true";
     private static Connection conn = null;
+    //private Login login;
     private Account AccountDialog;
     private Category CategoryDialog;
     private Ledger LedgerDialog;
@@ -149,9 +150,11 @@ public class FinanceJ extends javax.swing.JFrame {
         }
     
     }
-    
+
+
     /** Creates new form FinanceJ */
     public FinanceJ() {
+
         LoadDBDriver();
         CreateDBConnection();
         CreateDBTables();
@@ -180,7 +183,6 @@ public class FinanceJ extends javax.swing.JFrame {
         
         UpdateTotal();
     }
-    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -373,7 +375,7 @@ public class FinanceJ extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FinanceJ().setVisible(true);
+                new Login().setVisible(true);
             }
         });
     }
@@ -419,6 +421,7 @@ public class FinanceJ extends javax.swing.JFrame {
 
 }
 
+///fin..///
 class AccountTotalTableModel extends AbstractTableModel {
 
     private String[] columnNames = {"Account", "Balance"};

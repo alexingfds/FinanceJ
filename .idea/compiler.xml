@@ -6,9 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FinanceJ-Team03" />
         <module name="financejteam03" />
+        <module name="FinanceJ-Team03" />
+        <module name="financej-team03" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="FinanceJ-Team03" target="6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
