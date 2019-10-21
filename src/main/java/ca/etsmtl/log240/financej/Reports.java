@@ -41,11 +41,11 @@ public class Reports extends javax.swing.JDialog {
 
         StartDateTextField = new javax.swing.JTextField();
         EndDateTextField = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
+        javax.swing.JLabel jLabel2 = new javax.swing.JLabel();
         CloseButton = new javax.swing.JButton();
-        TransactionsByAccountButton = new javax.swing.JButton();
-        TransactionsByCategoryButton = new javax.swing.JButton();
+        javax.swing.JButton transactionsByAccountButton = new javax.swing.JButton();
+        javax.swing.JButton transactionsByCategoryButton = new javax.swing.JButton();
 
         setModal(true);
 
@@ -56,19 +56,19 @@ public class Reports extends javax.swing.JDialog {
         CloseButton.setText("Close");
         CloseButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CloseButtonActionPerformed(evt);
+                CloseButtonActionPerformed();
             }
         });
 
-        TransactionsByAccountButton.setText("Transactions by Account");
-        TransactionsByAccountButton.addActionListener(new java.awt.event.ActionListener() {
+        transactionsByAccountButton.setText("Transactions by Account");
+        transactionsByAccountButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TransactionsByAccountButtonActionPerformed(evt);
+                TransactionsByAccountButtonActionPerformed();
             }
         });
 
-        TransactionsByCategoryButton.setText("Transactions by Category");
-        TransactionsByCategoryButton.addActionListener(new java.awt.event.ActionListener() {
+        transactionsByCategoryButton.setText("Transactions by Category");
+        transactionsByCategoryButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TransactionsByCategoryButtonActionPerformed(evt);
             }
@@ -95,8 +95,8 @@ public class Reports extends javax.swing.JDialog {
                         .addGap(35, 35, 35))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(TransactionsByCategoryButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(TransactionsByAccountButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(transactionsByCategoryButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(transactionsByAccountButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap(216, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -109,9 +109,9 @@ public class Reports extends javax.swing.JDialog {
                     .addComponent(jLabel2)
                     .addComponent(EndDateTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(54, 54, 54)
-                .addComponent(TransactionsByAccountButton)
+                .addComponent(transactionsByAccountButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(TransactionsByCategoryButton)
+                .addComponent(transactionsByCategoryButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
                 .addComponent(CloseButton)
                 .addGap(20, 20, 20))
@@ -119,7 +119,7 @@ public class Reports extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    private void TransactionsByAccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TransactionsByAccountButtonActionPerformed
+    private void TransactionsByAccountButtonActionPerformed() {//GEN-FIRST:event_TransactionsByAccountButtonActionPerformed
         
         try {
             TransactionAccountReport TransactionReportInstance = new TransactionAccountReport(conn, StartDateTextField.getText(), EndDateTextField.getText());
@@ -135,7 +135,7 @@ public class Reports extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_TransactionsByAccountButtonActionPerformed
 
-    private void CloseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CloseButtonActionPerformed
+    private void CloseButtonActionPerformed() {//GEN-FIRST:event_CloseButtonActionPerformed
         setVisible(false);
     }//GEN-LAST:event_CloseButtonActionPerformed
 
@@ -177,11 +177,7 @@ public class Reports extends javax.swing.JDialog {
     private javax.swing.JButton CloseButton;
     private javax.swing.JTextField EndDateTextField;
     private javax.swing.JTextField StartDateTextField;
-    private javax.swing.JButton TransactionsByAccountButton;
-    private javax.swing.JButton TransactionsByCategoryButton;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    // End of variables declaration//GEN-END:variables
+    //End of variables declaration//GEN-END:variables
 }
 
 class TransactionAccountReport {
@@ -191,14 +187,14 @@ class TransactionAccountReport {
     private PrintWriter pw = null;
     private String AccountName;
     
-    public TransactionAccountReport(Connection DBConn, String StartDateParam,
-            String EndDateParam) {
+    TransactionAccountReport(Connection DBConn, String StartDateParam,
+                             String EndDateParam) {
         conn = DBConn;
         StartDate = StartDateParam;
         EndDate = EndDateParam;
         Run();
     }
-    public void Run() {
+    void Run() {
         try {
             File ReportFile = new File("report.html");
             FileWriter fw = new FileWriter(ReportFile);
@@ -214,13 +210,13 @@ class TransactionAccountReport {
         }
     }
     
-    public void MakeReportHeader() {
+    private void MakeReportHeader() {
         pw.println("<html><title>FinanceJ Transaction Report by Account</title>");
         pw.println("<h1>Transaction Report by Account</h1>");
         pw.println("<h2>Start Date:" + StartDate + " End Date:" + EndDate + "</h2>");
     }
     
-    public void MakeReportDetail() {
+    private void MakeReportDetail() {
         ResultSet AccountResult;
         Statement s;
         int CurrentRow = 0;
@@ -268,7 +264,7 @@ class TransactionAccountReport {
                   pw.println("</tr>");
                   total += LedgerResult.getFloat(5);
                 }
-                
+
                 pw.println("<tr>");
                 pw.printf("<td colspan=\"4\">Total</td>");
                 pw.printf("<td>$%12.2f</td>", total);
@@ -281,7 +277,7 @@ class TransactionAccountReport {
         }
     }
     
-    public void MakeReportFooter() {
+    private void MakeReportFooter() {
         pw.println("</html>");
     }
     
@@ -295,14 +291,14 @@ class TransactionCategoryReport {
     private String CategoryName;
     private float CategoryBudget = 0;
     
-    public TransactionCategoryReport(Connection DBConn, String StartDateParam,
-            String EndDateParam) {
+    TransactionCategoryReport(Connection DBConn, String StartDateParam,
+                              String EndDateParam) {
         conn = DBConn;
         StartDate = StartDateParam;
         EndDate = EndDateParam;
         Run();
     }
-    public void Run() {
+    void Run() {
         try {
             File ReportFile = new File("report.html");
             FileWriter fw = new FileWriter(ReportFile);
@@ -318,13 +314,13 @@ class TransactionCategoryReport {
         }
     }
     
-    public void MakeReportHeader() {
+    private void MakeReportHeader() {
         pw.println("<html><title>FinanceJ Transaction Report by Category</title>");
         pw.println("<h1>Transaction Report by Category</h1>");
         pw.println("<h2>Start Date:" + StartDate + " End Date:" + EndDate + "</h2>");
     }
     
-    public void MakeReportDetail() {
+    private void MakeReportDetail() {
         ResultSet AccountResult;
         Statement s;
         int CurrentRow = 0;
@@ -346,7 +342,7 @@ class TransactionCategoryReport {
         }
     }
     
-    public void MakeAccountDetail() {
+    private void MakeAccountDetail() {
         ResultSet LedgerResult;
         Statement s;
         float total = 0;
@@ -373,7 +369,7 @@ class TransactionCategoryReport {
                   pw.println("</tr>");
                   total += LedgerResult.getFloat(5);
                 }
-                
+
                 pw.println("<tr>");
                 pw.printf("<td colspan=\"2\">Budget</td>");
                 pw.printf("<td>$%12.2f</td>", CategoryBudget);
@@ -387,8 +383,8 @@ class TransactionCategoryReport {
             }
         }
     }
-    
-    public void MakeReportFooter() {
+
+    private void MakeReportFooter() {
         pw.println("</html>");
     }
     

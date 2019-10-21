@@ -6,7 +6,6 @@ package ca.etsmtl.log240.financej;
  */
 
 import java.sql.*;
-import java.util.*;
 import javax.swing.table.*;
 import javax.swing.*;
 
@@ -16,7 +15,6 @@ import javax.swing.*;
  */
 public class Account extends javax.swing.JDialog {
 
-	private Connection conn = null;
 	private AccountListTableModel dataModel;
 
 	/** Creates new form Account */
@@ -27,8 +25,7 @@ public class Account extends javax.swing.JDialog {
 	}
 
 	public void SetDBConnection(Connection DBConn) {
-		conn = DBConn;
-		dataModel = new AccountListTableModel(conn);
+		dataModel = new AccountListTableModel(DBConn);
 		AccountListTable.setModel(dataModel);
 	}
 
@@ -40,25 +37,25 @@ public class Account extends javax.swing.JDialog {
 	// <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
 	private void initComponents() {
 
-		CloseButton = new javax.swing.JButton();
-		jScrollPane1 = new javax.swing.JScrollPane();
+		JButton closeButton = new JButton();
+		JScrollPane jScrollPane1 = new JScrollPane();
 		AccountListTable = new javax.swing.JTable();
-		DeleteAccountButton = new javax.swing.JButton();
-		jPanel1 = new javax.swing.JPanel();
-		AddAccountButton = new javax.swing.JButton();
+		JButton deleteAccountButton = new JButton();
+		JPanel jPanel1 = new JPanel();
+		JButton addAccountButton = new JButton();
 		NameTextField = new javax.swing.JTextField();
 		DescriptionTextField = new javax.swing.JTextField();
 		jLabel1 = new javax.swing.JLabel();
-		jLabel2 = new javax.swing.JLabel();
+		JLabel jLabel2 = new JLabel();
 
 		setTitle("Accounts");
 		setModal(true);
 		setName("AccountDialog"); // NOI18N
 
-		CloseButton.setText("Close");
-		CloseButton.addActionListener(new java.awt.event.ActionListener() {
+		closeButton.setText("Close");
+		closeButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				CloseButtonActionPerformed(evt);
+				CloseButtonActionPerformed();
 			}
 		});
 
@@ -81,17 +78,17 @@ public class Account extends javax.swing.JDialog {
 		jScrollPane1.setViewportView(AccountListTable);
 		AccountListTable.getColumnModel().getColumn(0).setPreferredWidth(25);
 
-		DeleteAccountButton.setText("Delete Account");
-		DeleteAccountButton.addActionListener(new java.awt.event.ActionListener() {
+		deleteAccountButton.setText("Delete Account");
+		deleteAccountButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				DeleteAccountButtonActionPerformed(evt);
+				DeleteAccountButtonActionPerformed();
 			}
 		});
 
-		AddAccountButton.setText("Add Account");
-		AddAccountButton.addActionListener(new java.awt.event.ActionListener() {
+		addAccountButton.setText("Add Account");
+		addAccountButton.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				AddAccountButtonActionPerformed(evt);
+				AddAccountButtonActionPerformed();
 			}
 		});
 
@@ -107,7 +104,7 @@ public class Account extends javax.swing.JDialog {
 						.addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
 								.addGroup(jPanel1Layout.createSequentialGroup()
 										.addContainerGap()
-										.addComponent(AddAccountButton))
+										.addComponent(addAccountButton))
 										.addGroup(jPanel1Layout.createSequentialGroup()
 												.addGap(117, 117, 117)
 												.addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -131,7 +128,7 @@ public class Account extends javax.swing.JDialog {
 										.addComponent(jLabel2)
 										.addComponent(DescriptionTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
 										.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-										.addComponent(AddAccountButton)
+										.addComponent(addAccountButton)
 										.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 		);
 
@@ -145,9 +142,9 @@ public class Account extends javax.swing.JDialog {
 						.addContainerGap())
 						.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
 								.addContainerGap(279, Short.MAX_VALUE)
-								.addComponent(DeleteAccountButton)
+								.addComponent(deleteAccountButton)
 								.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-								.addComponent(CloseButton)
+								.addComponent(closeButton)
 								.addGap(31, 31, 31))
 								.addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 		);
@@ -159,18 +156,18 @@ public class Account extends javax.swing.JDialog {
 						.addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
 						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
 						.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-								.addComponent(DeleteAccountButton)
-								.addComponent(CloseButton))
+								.addComponent(deleteAccountButton)
+								.addComponent(closeButton))
 								.addContainerGap())
 		);
 
 		pack();
 	}// </editor-fold>//GEN-END:initComponents
-	private void CloseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CloseButtonActionPerformed
+	private void CloseButtonActionPerformed() {//GEN-FIRST:event_CloseButtonActionPerformed
 		setVisible(false);
 	}//GEN-LAST:event_CloseButtonActionPerformed
 
-	private void DeleteAccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteAccountButtonActionPerformed
+	private void DeleteAccountButtonActionPerformed() {//GEN-FIRST:event_DeleteAccountButtonActionPerformed
 		if (AccountListTable.getSelectionModel().getLeadSelectionIndex() >= 0) {
 			System.out.println("delete row:" + AccountListTable.getSelectionModel().getLeadSelectionIndex());
 			dataModel.DeleteAccount(AccountListTable.getSelectionModel().getLeadSelectionIndex());
@@ -181,7 +178,7 @@ public class Account extends javax.swing.JDialog {
 		}
 	}//GEN-LAST:event_DeleteAccountButtonActionPerformed
 
-	private void AddAccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddAccountButtonActionPerformed
+	private void AddAccountButtonActionPerformed() {//GEN-FIRST:event_AddAccountButtonActionPerformed
 		int ReturnCode;
 
 		ReturnCode = dataModel.AddAccount(NameTextField.getText(), DescriptionTextField.getText());
@@ -215,22 +212,16 @@ public class Account extends javax.swing.JDialog {
 	}
 	// Variables declaration - do not modify//GEN-BEGIN:variables
 	private javax.swing.JTable AccountListTable;
-	private javax.swing.JButton AddAccountButton;
-	private javax.swing.JButton CloseButton;
-	private javax.swing.JButton DeleteAccountButton;
 	private javax.swing.JTextField DescriptionTextField;
 	private javax.swing.JTextField NameTextField;
 	private javax.swing.JLabel jLabel1;
-	private javax.swing.JLabel jLabel2;
-	private javax.swing.JPanel jPanel1;
-	private javax.swing.JScrollPane jScrollPane1;
 	// End of variables declaration//GEN-END:variables
 }
 
 class AccountListTableModel extends AbstractTableModel {
 
 	private String[] columnNames = {"Name", "Description"};
-	private Connection conn = null;
+	private Connection conn;
 
 	public AccountListTableModel(Connection DBConn) {
 		conn = DBConn;
@@ -304,11 +295,7 @@ class AccountListTableModel extends AbstractTableModel {
 		//no matter where the cell appears onscreen.
 
 
-		if (col == 0) {
-			return false;
-		} else {
-			return true;
-		}
+		return col != 0;
 	}
 
 	public void setValueAt(Object value, int row, int col) {
@@ -329,7 +316,7 @@ class AccountListTableModel extends AbstractTableModel {
 		}
 	}
 
-	public void DeleteAccount(int row) {
+	void DeleteAccount(int row) {
 		Statement s;
 		String AccountName;
 		String SQLString;

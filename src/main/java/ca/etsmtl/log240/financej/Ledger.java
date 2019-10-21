@@ -5,12 +5,15 @@ package ca.etsmtl.log240.financej;
  * Created on March 9, 2008, 11:40 PM
  */
 
-import java.sql.*;
-import java.util.*;
-import javax.swing.table.*;
 import javax.swing.*;
+import javax.swing.table.AbstractTableModel;
+import javax.swing.table.TableColumn;
+import java.awt.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.text.SimpleDateFormat;
-import java.awt.Color;
 
 /**
  *
@@ -234,7 +237,7 @@ public class Ledger extends javax.swing.JDialog {
         DeleteTransactionButton.setText("Delete Transaction");
         DeleteTransactionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DeleteTransactionButtonActionPerformed(evt);
+                DeleteTransactionButtonActionPerformed();
             }
         });
 
@@ -364,7 +367,7 @@ public class Ledger extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_AddTransactionButtonActionPerformed
 
-    private void DeleteTransactionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteTransactionButtonActionPerformed
+    private void DeleteTransactionButtonActionPerformed() {//GEN-FIRST:event_DeleteTransactionButtonActionPerformed
         if (LedgerTable.getSelectionModel().getLeadSelectionIndex() >= 0) {
             System.out.println("delete row:" + LedgerTable.getSelectionModel().getLeadSelectionIndex());
             dataModel.DeleteLedger(LedgerTable.getSelectionModel().getLeadSelectionIndex());
@@ -492,11 +495,7 @@ class LedgerListTableModel extends AbstractTableModel {
                             Boolean Rec;
 
                             TempRecValue = LedgerResult.getInt(2);
-                            if (TempRecValue == 0) {
-                                Rec = false;
-                            } else {
-                                Rec = true;
-                            }
+                            Rec = TempRecValue != 0;
                             return Rec;
                         } else if (col == 2) {
                             java.sql.Date TDate;

@@ -6,10 +6,10 @@ package ca.etsmtl.log240.financej;
  */
 
 
-import java.sql.*;
-import javax.swing.table.*;
 import javax.swing.*;
-import java.awt.Color;
+import javax.swing.table.AbstractTableModel;
+import java.awt.*;
+import java.sql.*;
 
 /**
  *
@@ -23,13 +23,14 @@ public class FinanceJ extends javax.swing.JFrame {
     // define the Derby connection URL to use 
     private static String connectionURL = "jdbc:derby:" + dbName + ";create=true";
     private static Connection conn = null;
+    //private Login login;
     private Account AccountDialog;
     private Category CategoryDialog;
     private Ledger LedgerDialog;
     private Reports ReportsDialog;
     private AccountTotalTableModel dataModel;
     
-  public static void LoadDBDriver() {
+  private static void LoadDBDriver() {
         try {
             /*
              **  Load the Derby driver. 
@@ -65,7 +66,7 @@ public class FinanceJ extends javax.swing.JFrame {
         }
     }
 
-    public static void CreateDBTables() {
+    private static void CreateDBTables() {
         String CreateStringAccount = "create table account (name varchar(50) primary key, description varchar(250))";
         String CreateStringCategory = "create table category (name varchar(50) primary key, description varchar(250), budget float)";
         String CreateStringLedger = "create table ledger (id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),rec integer, tdate date, payee  varchar(50), description varchar(250), account varchar(50), category varchar(50), amount float)";
@@ -149,9 +150,11 @@ public class FinanceJ extends javax.swing.JFrame {
         }
     
     }
-    
+
+
     /** Creates new form FinanceJ */
     public FinanceJ() {
+
         LoadDBDriver();
         CreateDBConnection();
         CreateDBTables();
@@ -180,7 +183,6 @@ public class FinanceJ extends javax.swing.JFrame {
         
         UpdateTotal();
     }
-    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -190,9 +192,10 @@ public class FinanceJ extends javax.swing.JFrame {
     private void initComponents() {
 
         ExitButton = new javax.swing.JButton();
-        AccountButton = new javax.swing.JButton();
+        // Variables declaration - do not modify//GEN-BEGIN:variables
+        JButton accountButton = new JButton();
         CategoriesButton = new javax.swing.JButton();
-        LedgerButton = new javax.swing.JButton();
+        JButton ledgerButton = new JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         AccountTotalTable = new javax.swing.JTable();
         ReportsButton = new javax.swing.JButton();
@@ -206,36 +209,36 @@ public class FinanceJ extends javax.swing.JFrame {
                 formWindowActivated(evt);
             }
             public void windowClosed(java.awt.event.WindowEvent evt) {
-                formWindowClosed(evt);
+                formWindowClosed();
             }
             public void windowClosing(java.awt.event.WindowEvent evt) {
-                formWindowClosing(evt);
+                formWindowClosing();
             }
         });
 
         ExitButton.setText("Exit");
         ExitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ExitButtonActionPerformed(evt);
+                ExitButtonActionPerformed();
             }
         });
 
-        AccountButton.setText("Accounts");
-        AccountButton.addActionListener(new java.awt.event.ActionListener() {
+        accountButton.setText("Accounts");
+        accountButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AccountButtonActionPerformed(evt);
+                AccountButtonActionPerformed();
             }
         });
 
         CategoriesButton.setText("Categories");
         CategoriesButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CategoriesButtonActionPerformed(evt);
+                CategoriesButtonActionPerformed();
             }
         });
 
-        LedgerButton.setText("Ledger");
-        LedgerButton.addActionListener(new java.awt.event.ActionListener() {
+        ledgerButton.setText("Ledger");
+        ledgerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LedgerButtonActionPerformed(evt);
             }
@@ -296,8 +299,8 @@ public class FinanceJ extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(CategoriesButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
-                            .addComponent(LedgerButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
-                            .addComponent(AccountButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
+                            .addComponent(ledgerButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
+                            .addComponent(accountButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
                             .addComponent(ReportsButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
                             .addComponent(ExitButton, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -308,11 +311,11 @@ public class FinanceJ extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(28, 28, 28)
-                .addComponent(LedgerButton)
+                .addComponent(ledgerButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(CategoriesButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(AccountButton)
+                .addComponent(accountButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ReportsButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -331,23 +334,23 @@ public class FinanceJ extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+    private void formWindowClosing() {//GEN-FIRST:event_formWindowClosing
         ShutdownDB();
     }//GEN-LAST:event_formWindowClosing
 
-    private void ExitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitButtonActionPerformed
+    private void ExitButtonActionPerformed() {//GEN-FIRST:event_ExitButtonActionPerformed
        dispose(); 
     }//GEN-LAST:event_ExitButtonActionPerformed
 
-    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
+    private void formWindowClosed() {//GEN-FIRST:event_formWindowClosed
         ShutdownDB();
     }//GEN-LAST:event_formWindowClosed
 
-    private void AccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AccountButtonActionPerformed
+    private void AccountButtonActionPerformed() {//GEN-FIRST:event_AccountButtonActionPerformed
         AccountDialog.setVisible(true);
     }//GEN-LAST:event_AccountButtonActionPerformed
 
-    private void CategoriesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CategoriesButtonActionPerformed
+    private void CategoriesButtonActionPerformed() {//GEN-FIRST:event_CategoriesButtonActionPerformed
         CategoryDialog.setVisible(true);
     }//GEN-LAST:event_CategoriesButtonActionPerformed
 
@@ -373,17 +376,14 @@ public class FinanceJ extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FinanceJ().setVisible(true);
+                new Login().setVisible(true);
             }
         });
     }
-    
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AccountButton;
+
     private javax.swing.JTable AccountTotalTable;
     private javax.swing.JButton CategoriesButton;
     private javax.swing.JButton ExitButton;
-    private javax.swing.JButton LedgerButton;
     private javax.swing.JButton ReportsButton;
     private javax.swing.JLabel TotalLabel;
     private javax.swing.JLabel jLabel1;
@@ -419,10 +419,11 @@ public class FinanceJ extends javax.swing.JFrame {
 
 }
 
+///fin..///
 class AccountTotalTableModel extends AbstractTableModel {
 
     private String[] columnNames = {"Account", "Balance"};
-    private Connection conn = null;
+    private Connection conn;
 
     public AccountTotalTableModel(Connection DBConn) {
         conn = DBConn;
