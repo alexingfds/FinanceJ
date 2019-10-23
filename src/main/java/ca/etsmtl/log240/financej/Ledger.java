@@ -95,7 +95,7 @@ public class Ledger extends javax.swing.JDialog {
     private void initComponents() {
 
         CloseButton = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        JScrollPane jScrollPane1 = new JScrollPane();
         LedgerTable = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
         AddTransactionButton = new javax.swing.JButton();
@@ -425,7 +425,6 @@ public class Ledger extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
 
