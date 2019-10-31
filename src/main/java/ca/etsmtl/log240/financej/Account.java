@@ -44,7 +44,9 @@ public class Account extends javax.swing.JDialog {
 		JPanel jPanel1 = new JPanel();
 		JButton addAccountButton = new JButton();
 		NameTextField = new javax.swing.JTextField();
+		NameTextField.setName("NAME_TEXT_FIELD"); //TEST AUTOMATISES
 		DescriptionTextField = new javax.swing.JTextField();
+		DescriptionTextField.setName("DESCRIPTION_TEXT_FIELD");// TEST AUTOMATISES
 		jLabel1 = new javax.swing.JLabel();
 		JLabel jLabel2 = new JLabel();
 
