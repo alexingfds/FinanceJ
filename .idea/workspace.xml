@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="">
+    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="Ajout depencies Junit 4.12 qui etait deja dans le projet et &quot;uispec&quot; .&#10;Ajout du repositoire &quot;ExNebula&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Ledger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Ledger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/LedgerListTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/LedgerListTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +38,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -189,6 +194,9 @@
       <workItem from="1568994653011" duration="7525000" />
       <workItem from="1569004011344" duration="4695000" />
       <workItem from="1571422744009" duration="32939000" />
+      <workItem from="1571848341276" duration="92000" />
+      <workItem from="1571853557049" duration="879000" />
+      <workItem from="1572543675905" duration="2210000" />
     </task>
     <task id="LOCAL-00001" summary="Changement de projet husqua etape 4.3">
       <created>1568819538099</created>
@@ -255,7 +263,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Changement de projet husqua etape 4.3" />
     <MESSAGE value="Ameloration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ameloration" />
+    <MESSAGE value="Ajout depencies Junit 4.12 qui etait deja dans le projet et &quot;uispec&quot; .&#10;Ajout du repositoire &quot;ExNebula&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout depencies Junit 4.12 qui etait deja dans le projet et &quot;uispec&quot; .&#10;Ajout du repositoire &quot;ExNebula&quot;" />
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
