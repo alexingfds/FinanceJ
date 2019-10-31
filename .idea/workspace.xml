@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/db.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/ReportsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/AccountTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest">
+  <component name="RunManager" selected="Application.Login">
     <configuration name="Account" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.Account" />
       <module name="FinanceJ-Team03" />
@@ -117,7 +128,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
@@ -161,14 +172,13 @@
       <item itemvalue="Application.Login" />
       <item itemvalue="Application.Account" />
       <item itemvalue="Application.FinanceJ" />
-      <item itemvalue="Maven.financej-team03 [compile]" />
       <item itemvalue="JUnit.AccountTest" />
+      <item itemvalue="Maven.financej-team03 [compile]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccountTest" />
-        <item itemvalue="Maven.financej-team03 [compile]" />
         <item itemvalue="Application.FinanceJ" />
+        <item itemvalue="Maven.financej-team03 [compile]" />
         <item itemvalue="Application.Account" />
       </list>
     </recent_temporary>
@@ -199,7 +209,8 @@
       <workItem from="1571848341276" duration="92000" />
       <workItem from="1571853557049" duration="879000" />
       <workItem from="1572543675905" duration="10375000" />
-      <workItem from="1572554432500" duration="2349000" />
+      <workItem from="1572554432500" duration="5001000" />
+      <workItem from="1572562223509" duration="1269000" />
     </task>
     <task id="LOCAL-00001" summary="Changement de projet husqua etape 4.3">
       <created>1568819538099</created>
@@ -257,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572558939697</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Enlever  l'appel de la  fenetre Login dans la  classe FinanceJ.  le mettre comme à l'initial &quot;FinanceJ comme page principale&quot;">
+      <created>1572559846603</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572559846603</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +300,8 @@
     <MESSAGE value="Ameloration" />
     <MESSAGE value="Ajout depencies Junit 4.12 qui etait deja dans le projet et &quot;uispec&quot; .&#10;Ajout du repositoire &quot;ExNebula&quot;" />
     <MESSAGE value="Ajout de classe AccountTest pour  les testes sur account et la classe FinancejAbstractTest qui contiendra tout les codes commun a  l'ensemble de nos testes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de classe AccountTest pour  les testes sur account et la classe FinancejAbstractTest qui contiendra tout les codes commun a  l'ensemble de nos testes" />
+    <MESSAGE value="Enlever  l'appel de la  fenetre Login dans la  classe FinanceJ.  le mettre comme à l'initial &quot;FinanceJ comme page principale&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enlever  l'appel de la  fenetre Login dans la  classe FinanceJ.  le mettre comme à l'initial &quot;FinanceJ comme page principale&quot;" />
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
