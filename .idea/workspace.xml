@@ -3,12 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/db.lck" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4b0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4b0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Ledger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Ledger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/ReportsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/CategoryListTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/CategoryListTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +54,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -61,7 +82,7 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="profiler.jvm" />
@@ -78,23 +99,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Login">
-    <configuration name="Account" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.Account" />
-      <module name="financej-team03" />
+  <component name="RunManager" selected="Maven.financej-team03 [compile]">
+    <configuration type="JUnit" factoryName="JUnit">
+      <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FinanceJ$Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.FinanceJ$Login" />
-      <module name="financej-team03" />
+    <configuration name="Account" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.Account" />
+      <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
@@ -107,7 +132,7 @@
     </configuration>
     <configuration name="FinanceJ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.FinanceJ" />
-      <module name="financej-team03" />
+      <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
@@ -118,15 +143,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Login" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.Login" />
-      <module name="financej-team03" />
+      <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="FinanceJ-Team03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.AccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountTest.testAddingAndDeletingAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinanceJ-Team03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.AccountTest" />
+      <option name="METHOD_NAME" value="testAddingAndDeletingAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinanceJ-Team03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.CategoryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,13 +227,21 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Login" />
+      <item itemvalue="Application.Account" />
+      <item itemvalue="Application.FinanceJ" />
+      <item itemvalue="JUnit.AccountTest" />
+      <item itemvalue="JUnit.AccountTest.testAddingAndDeletingAccount" />
+      <item itemvalue="Maven.financej-team03 [compile]" />
+      <item itemvalue="JUnit.CategoryTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Login" />
-        <item itemvalue="Application.FinanceJ" />
-        <item itemvalue="Application.FinanceJ$Login" />
         <item itemvalue="Maven.financej-team03 [compile]" />
-        <item itemvalue="Application.Account" />
+        <item itemvalue="JUnit.AccountTest.testAddingAndDeletingAccount" />
+        <item itemvalue="JUnit.CategoryTest" />
+        <item itemvalue="Application.FinanceJ" />
       </list>
     </recent_temporary>
   </component>
@@ -189,6 +268,13 @@
       <workItem from="1568994653011" duration="7525000" />
       <workItem from="1569004011344" duration="4695000" />
       <workItem from="1571422744009" duration="32939000" />
+      <workItem from="1571848341276" duration="92000" />
+      <workItem from="1571853557049" duration="879000" />
+      <workItem from="1572543675905" duration="10375000" />
+      <workItem from="1572554432500" duration="5001000" />
+      <workItem from="1572562223509" duration="3538000" />
+      <workItem from="1572574827529" duration="2156000" />
+      <workItem from="1572577026115" duration="1320000" />
     </task>
     <task id="LOCAL-00001" summary="Changement de projet husqua etape 4.3">
       <created>1568819538099</created>
@@ -232,7 +318,35 @@
       <option name="project" value="LOCAL" />
       <updated>1571624382330</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ajout depencies Junit 4.12 qui etait deja dans le projet et &quot;uispec&quot; .&#10;Ajout du repositoire &quot;ExNebula&quot;">
+      <created>1572545895238</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572545895238</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Ajout de classe AccountTest pour  les testes sur account et la classe FinancejAbstractTest qui contiendra tout les codes commun a  l'ensemble de nos testes">
+      <created>1572558939697</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572558939697</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Enlever  l'appel de la  fenetre Login dans la  classe FinanceJ.  le mettre comme à l'initial &quot;FinanceJ comme page principale&quot;">
+      <created>1572559846603</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572559846603</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Ajouter gabarit des classes testes CategoryTest, LedgerTest,ReportsTest">
+      <created>1572565570984</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572565570984</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +369,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Changement de projet husqua etape 4.3" />
     <MESSAGE value="Ameloration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ameloration" />
+    <MESSAGE value="Ajout depencies Junit 4.12 qui etait deja dans le projet et &quot;uispec&quot; .&#10;Ajout du repositoire &quot;ExNebula&quot;" />
+    <MESSAGE value="Ajout de classe AccountTest pour  les testes sur account et la classe FinancejAbstractTest qui contiendra tout les codes commun a  l'ensemble de nos testes" />
+    <MESSAGE value="Enlever  l'appel de la  fenetre Login dans la  classe FinanceJ.  le mettre comme à l'initial &quot;FinanceJ comme page principale&quot;" />
+    <MESSAGE value="Ajouter gabarit des classes testes CategoryTest, LedgerTest,ReportsTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajouter gabarit des classes testes CategoryTest, LedgerTest,ReportsTest" />
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>

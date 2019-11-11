@@ -376,7 +376,7 @@ public class FinanceJ extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                new FinanceJ().setVisible(true);
             }
         });
     }
