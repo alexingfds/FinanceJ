@@ -66,11 +66,7 @@
   </dependencies>
 
   <repositories>
-    <repository>
-      <id>exnebula.org</id>
-      <name>ExNebula Repository</name>
-      <url>http://mvn.exnebula.org</url>
-    </repository>
+
     <repository>
       <snapshots>
         <enabled>false</enabled>
