@@ -1,30 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="">
+    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="Ajouter gabarit des classes testes CategoryTest, LedgerTest,ReportsTest">
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/db.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/log/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/log/log.ctrl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/log/log1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/log/logmirror.ctrl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c10.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c101.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c111.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c121.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c130.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c141.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c150.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c161.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c171.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c180.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c191.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c1a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c1b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c1c0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c1d1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c1e0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c1f1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c20.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c200.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c211.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c221.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c230.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c241.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c251.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c260.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c271.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c281.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c290.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c2a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c2b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c2c1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c2d0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c2e1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c2f0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c300.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c31.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c311.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c321.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c331.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c340.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c351.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c361.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c371.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c380.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c391.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c3a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c3b1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c3c0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c3d1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c3e1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c3f1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c400.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c41.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c411.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c421.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c430.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c441.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c451.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c461.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c470.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c481.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c490.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c4a1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c4b0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c4c1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c4d0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c51.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c60.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c71.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c81.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/c90.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/ca1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/cb1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/cc0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/cd1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/ce1.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/seg0/cf0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDByuyu/service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Login.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/db.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c10.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c101.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c111.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c121.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c130.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c141.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c180.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c180.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c1a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c1a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c1b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c1b1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c20.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c230.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c241.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c31.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c380.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c380.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c391.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c391.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c3a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c3a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c3b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c3b1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c400.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c41.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c411.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c411.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c421.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c421.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4b0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4b0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4d0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4d0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c51.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c60.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c81.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c90.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/ca1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/cf0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/service.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/ReportsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/CategoryListTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/CategoryListTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Ledger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/Ledger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/AccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$6$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$6$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/LedgerListTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/LedgerListTableModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,13 +184,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="enabledProfiles">
-      <list>
-        <option value="ets-log240" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectId" id="1QhN5nosjGsmIkrknes9AmHUgVL" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -80,12 +196,15 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568217055268" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hnefatafl" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="profiler.jvm" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -99,7 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.financej-team03 [compile]">
+  <component name="RunManager" selected="JUnit.LedgerTest.testAddLedger">
     <configuration type="JUnit" factoryName="JUnit">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
@@ -117,62 +236,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Account" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.Account" />
-      <module name="FinanceJ-Team03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FinanceJ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.FinanceJ" />
-      <module name="FinanceJ-Team03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Login" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.Login" />
-      <module name="FinanceJ-Team03" />
+      <module name="Financej-Team03" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="FinanceJ-Team03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.AccountTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="AccountTest.testAddingAndDeletingAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinanceJ-Team03" />
+      <module name="Financej-Team03" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
@@ -187,8 +265,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinanceJ-Team03" />
+    <configuration name="LedgerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Financej-Team03" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
@@ -196,13 +274,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.CategoryTest" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="financej-team03 [compile]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+    <configuration name="LedgerTest.testAddLedger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Financej-Team03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
+      <option name="METHOD_NAME" value="testAddLedger" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="financej-team03 [exec:java]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -213,7 +307,7 @@
             </option>
             <option name="goals">
               <list>
-                <option value="compile" />
+                <option value="exec:java" />
               </list>
             </option>
             <option name="pomFileName" value="pom.xml" />
@@ -228,20 +322,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Login" />
-      <item itemvalue="Application.Account" />
-      <item itemvalue="Application.FinanceJ" />
-      <item itemvalue="JUnit.AccountTest" />
       <item itemvalue="JUnit.AccountTest.testAddingAndDeletingAccount" />
-      <item itemvalue="Maven.financej-team03 [compile]" />
-      <item itemvalue="JUnit.CategoryTest" />
+      <item itemvalue="JUnit.LedgerTest" />
+      <item itemvalue="Application.Login" />
+      <item itemvalue="JUnit.LedgerTest.testAddLedger" />
+      <item itemvalue="Maven.financej-team03 [exec:java]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Maven.financej-team03 [compile]" />
+        <item itemvalue="JUnit.LedgerTest.testAddLedger" />
+        <item itemvalue="Maven.financej-team03 [exec:java]" />
         <item itemvalue="JUnit.AccountTest.testAddingAndDeletingAccount" />
-        <item itemvalue="JUnit.CategoryTest" />
-        <item itemvalue="Application.FinanceJ" />
+        <item itemvalue="Application.Login" />
+        <item itemvalue="JUnit.LedgerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -275,6 +368,14 @@
       <workItem from="1572562223509" duration="3538000" />
       <workItem from="1572574827529" duration="2156000" />
       <workItem from="1572577026115" duration="1320000" />
+      <workItem from="1573439629586" duration="3020000" />
+      <workItem from="1573493427560" duration="343000" />
+      <workItem from="1573493779919" duration="22086000" />
+      <workItem from="1573670769990" duration="11977000" />
+      <workItem from="1573694276233" duration="7137000" />
+      <workItem from="1573746248280" duration="14452000" />
+      <workItem from="1573782072605" duration="94000" />
+      <workItem from="1573782176761" duration="43832000" />
     </task>
     <task id="LOCAL-00001" summary="Changement de projet husqua etape 4.3">
       <created>1568819538099</created>
@@ -374,6 +475,25 @@
     <MESSAGE value="Enlever  l'appel de la  fenetre Login dans la  classe FinanceJ.  le mettre comme à l'initial &quot;FinanceJ comme page principale&quot;" />
     <MESSAGE value="Ajouter gabarit des classes testes CategoryTest, LedgerTest,ReportsTest" />
     <option name="LAST_COMMIT_MESSAGE" value="Ajouter gabarit des classes testes CategoryTest, LedgerTest,ReportsTest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java</url>
+          <line>9</line>
+          <properties class="ca.etsmtl.log240.financej.LedgerTest" method="testAddLedger">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FinanceJ_Team03$LedgerTest_testAddLedger.ic" NAME="LedgerTest.testAddLedger Coverage Results" MODIFIED="1573943867043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ca.etsmtl.log240.financej.*</FILTER>
+    </SUITE>
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
