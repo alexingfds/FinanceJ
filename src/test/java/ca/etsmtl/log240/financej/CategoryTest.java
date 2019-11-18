@@ -16,13 +16,13 @@ public class CategoryTest extends  FinancejAbstractTest{
 // setup
                         categoriesTable = window.getTable();
                         int initialRowCount = categoriesTable.getRowCount();
-// ajouter un compte
+// ajouter un categorie
                         window.getTextBox("NAME_TEXT_FIELD").setText("Category name");
                         window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("Savings");
                         window.getTextBox("BUDGET_TEXT_FIELD").setText("120");
                         window.getButton("Add Category").click();
                         assertEquals(categoriesTable.getRowCount(), initialRowCount+1);
-// supprimer le compte cree precedemment en cherchant le nom
+// supprimer la categorie cree precedemment en cherchant le nom de la categorie
                         categoriesTable.selectRowsWithText(0, "Category name");
                         window.getButton("Delete Category").click();
                         assertEquals(categoriesTable.getRowCount(), initialRowCount);
