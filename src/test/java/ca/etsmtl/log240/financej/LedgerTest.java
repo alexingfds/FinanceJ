@@ -50,7 +50,9 @@ public class LedgerTest extends FinancejAbstractTest {
 
 
        public void testL20() throws Exception {
-        /* Voici comment traiter une fenêtre modale avec uispec4j.
+           setup();
+
+           /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
         WindowInterceptor.init(ledgerButton.triggerClick())
@@ -74,7 +76,8 @@ public class LedgerTest extends FinancejAbstractTest {
 // supprimer la transaction cree precedemment en cherchant la descritption
                         ledgerTable.selectRowsWithText(4, "Description");
                         window.getButton("Delete Transaction").click();
-                        assertEquals(ledgerTable.getRowCount(), initialRowCount);
+                        int finalRowCount  = ledgerTable.getRowCount();
+                        assertEquals(finalRowCount, initialRowCount);
 // retourner un "trigger" qui ferme la fenêtre modale
                         return window.getButton("Close").triggerClick();
                     }
@@ -82,6 +85,8 @@ public class LedgerTest extends FinancejAbstractTest {
     }
 
     public void testL21() throws Exception {
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -96,7 +101,9 @@ public class LedgerTest extends FinancejAbstractTest {
 // supprimer la transaction cree precedemment en cherchant la descritption
 
                         window.getButton("Delete Transaction").click();
-                        assertEquals(ledgerTable.getRowCount(), initialRowCount);
+                        int finalRowCount  = ledgerTable.getRowCount();
+
+                        assertEquals( finalRowCount , initialRowCount);
 // retourner un "trigger" qui ferme la fenêtre modale
                         return window.getButton("Close").triggerClick();
                     }
@@ -104,6 +111,8 @@ public class LedgerTest extends FinancejAbstractTest {
     }
 
     public void testL1() throws Exception {
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -124,14 +133,17 @@ public class LedgerTest extends FinancejAbstractTest {
 
 
                         window.getButton("Add Transaction").click();
+                        int finalRowCount  = ledgerTable.getRowCount();
                         Teardown(ledgerTable,window);
-                        assertEquals("la date il ne doit pas être null",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals("la date il ne doit pas être null",finalRowCount, initialRowCount);
 
                         return window.getButton("Close").triggerClick();
                     }
                 }).run();
     }
     public void testL2() throws Exception {
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -151,8 +163,9 @@ public class LedgerTest extends FinancejAbstractTest {
                         window.getComboBox("ACCOUNTS_COMBO_BOX").select("Com1");
 
                         window.getButton("Add Transaction").click();
+                        int finalRowCount  = ledgerTable.getRowCount();
                         Teardown(ledgerTable,window);
-                        assertEquals("il doit respecter la forme date yyyy-mm-dd",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals("il doit respecter la forme date yyyy-mm-dd",finalRowCount, initialRowCount);
 
                         return window.getButton("Close").triggerClick();
                     }
@@ -161,6 +174,8 @@ public class LedgerTest extends FinancejAbstractTest {
 
 
     public void testL3() throws Exception {
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -180,8 +195,9 @@ public class LedgerTest extends FinancejAbstractTest {
                         window.getComboBox("ACCOUNTS_COMBO_BOX").select("Com1");
 
                         window.getButton("Add Transaction").click();
+                        int finalRowCount  = ledgerTable.getRowCount();
                         Teardown(ledgerTable,window);
-                        assertEquals("il doit respecter la forme date yyyy-mm-dd",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals("il doit respecter la forme date yyyy-mm-dd",finalRowCount, initialRowCount);
 
                         return window.getButton("Close").triggerClick();
                     }
@@ -189,6 +205,8 @@ public class LedgerTest extends FinancejAbstractTest {
     }
 
     public void testL4() throws Exception {
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -208,14 +226,17 @@ public class LedgerTest extends FinancejAbstractTest {
                         window.getComboBox("ACCOUNTS_COMBO_BOX").select("Com1");
 
                         window.getButton("Add Transaction").click();
+                        int finalRowCount  = ledgerTable.getRowCount();
                         Teardown(ledgerTable,window);
-                        assertEquals("il doit respecter la forme date yyyy-mm-dd",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals("il doit respecter la forme date yyyy-mm-dd",finalRowCount, initialRowCount);
 
                         return window.getButton("Close").triggerClick();
                     }
                 }).run();
     }
     public void testL5() throws Exception {
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -235,14 +256,17 @@ public class LedgerTest extends FinancejAbstractTest {
                         window.getComboBox("ACCOUNTS_COMBO_BOX").select("Com1");
 
                         window.getButton("Add Transaction").click();
+                        int finalRowCount  = ledgerTable.getRowCount();
                         Teardown(ledgerTable,window);
-                        assertEquals("il doit respecter la forme date yyyy-mm-dd",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals("il doit respecter la forme date yyyy-mm-dd", finalRowCount , initialRowCount);
 
                         return window.getButton("Close").triggerClick();
                     }
                 }).run();
     }
     public void testL6() throws Exception {
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -262,14 +286,17 @@ public class LedgerTest extends FinancejAbstractTest {
                         window.getComboBox("ACCOUNTS_COMBO_BOX").select("Com1");
 
                         window.getButton("Add Transaction").click();
+                        int finalRowCount  = ledgerTable.getRowCount();
                         Teardown(ledgerTable,window);
-                        assertEquals("il doit respecter la forme date yyyy-mm-dd",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals("il doit respecter la forme date yyyy-mm-dd",finalRowCount, initialRowCount);
 
                         return window.getButton("Close").triggerClick();
                     }
                 }).run();
     }
     public void testL7() throws Exception {
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -289,14 +316,17 @@ public class LedgerTest extends FinancejAbstractTest {
                         window.getComboBox("ACCOUNTS_COMBO_BOX").select("Com1");
 
                         window.getButton("Add Transaction").click();
+                        int finalRowCount  = ledgerTable.getRowCount();
                         Teardown(ledgerTable,window);
-                        assertEquals("date <1900",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals("date <1900",finalRowCount, initialRowCount);
 
                         return window.getButton("Close").triggerClick();
                     }
                 }).run();
     }
     public void testL8() throws Exception {
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -316,8 +346,9 @@ public class LedgerTest extends FinancejAbstractTest {
                         window.getComboBox("ACCOUNTS_COMBO_BOX").select("Com1");
 
                         window.getButton("Add Transaction").click();
+                        int finalRowCount  = ledgerTable.getRowCount();
                         Teardown(ledgerTable,window);
-                        assertEquals("d’erreur champs description vide",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals("d’erreur champs description vide",finalRowCount, initialRowCount);
 
                         return window.getButton("Close").triggerClick();
                     }
@@ -325,6 +356,8 @@ public class LedgerTest extends FinancejAbstractTest {
     }
 
     public void testL9() throws Exception {
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -344,14 +377,17 @@ public class LedgerTest extends FinancejAbstractTest {
                         window.getComboBox("ACCOUNTS_COMBO_BOX").select("Com1");
 
                         window.getButton("Add Transaction").click();
+                        int finalRowCount  = ledgerTable.getRowCount();
                         Teardown(ledgerTable,window);
-                        assertEquals("description moins de 5 caractères",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals("description moins de 5 caractères",finalRowCount , initialRowCount);
 
                         return window.getButton("Close").triggerClick();
                     }
                 }).run();
     }
     public void testL10() throws Exception {
+        setup();
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -379,6 +415,8 @@ public class LedgerTest extends FinancejAbstractTest {
                 }).run();
     }
     public void testL11() throws Exception {
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -407,6 +445,7 @@ public class LedgerTest extends FinancejAbstractTest {
     }
 
     public void testL12() throws Exception {
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -435,6 +474,7 @@ public class LedgerTest extends FinancejAbstractTest {
     }
 
     public void testL13() throws Exception {
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -463,6 +503,7 @@ public class LedgerTest extends FinancejAbstractTest {
     }
 
     public void testL14() throws Exception {
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -491,6 +532,7 @@ public class LedgerTest extends FinancejAbstractTest {
     }
 
     public void testL15() throws Exception {
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -510,8 +552,9 @@ public class LedgerTest extends FinancejAbstractTest {
                         window.getComboBox("ACCOUNTS_COMBO_BOX").select("Com1");
 
                         window.getButton("Add Transaction").click();
+                        int finalRowCount  = ledgerTable.getRowCount();
                         Teardown(ledgerTable,window);
-                        assertEquals("Message d’erreur année non Bissextile",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals("Message d’erreur année non Bissextile",finalRowCount , initialRowCount);
 
                         return window.getButton("Close").triggerClick();
                     }
@@ -519,6 +562,7 @@ public class LedgerTest extends FinancejAbstractTest {
     }
 
     public void testL16() throws Exception {
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -538,14 +582,16 @@ public class LedgerTest extends FinancejAbstractTest {
                         window.getComboBox("ACCOUNTS_COMBO_BOX").select("Com1");
 
                         window.getButton("Add Transaction").click();
+                        int finalRowCount = ledgerTable.getRowCount();
                         Teardown(ledgerTable,window);
-                        assertEquals("Message d’erreur année non Bissextile",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals("Message d’erreur année non Bissextile",finalRowCount, initialRowCount);
 
                         return window.getButton("Close").triggerClick();
                     }
                 }).run();
     }
     public void testL17() throws Exception {
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
@@ -563,10 +609,11 @@ public class LedgerTest extends FinancejAbstractTest {
                         window.getComboBox("CATEGORY_COMBO_BOX").select("Cat1");
                         window.getTextBox("AMOUNT_TEXT_FIELD").setText("2900");
                         window.getComboBox("ACCOUNTS_COMBO_BOX").select("Com1");
-
                         window.getButton("Add Transaction").click();
+                        int finalRowCount = ledgerTable.getRowCount();
+
                         Teardown(ledgerTable,window);
-                        assertEquals(" avril contient 30 jours",ledgerTable.getRowCount(), initialRowCount);
+                        assertEquals(" avril contient 30 jours",finalRowCount, initialRowCount );
 
                         return window.getButton("Close").triggerClick();
                     }
@@ -606,6 +653,7 @@ public class LedgerTest extends FinancejAbstractTest {
                 }).run();
     }
     public void testL19() throws Exception {
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
