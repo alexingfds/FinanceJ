@@ -1,159 +1,261 @@
 package ca.etsmtl.log240.financej;
-import org.junit.After;
-import org.junit.Test;
+
 import org.uispec4j.Table;
 import org.uispec4j.Trigger;
 import org.uispec4j.Window;
 import org.uispec4j.interception.WindowHandler;
 import org.uispec4j.interception.WindowInterceptor;
+
 public class AccountTest extends FinancejAbstractTest {
+
     private Table accountsTable;
 
-    public void testAddingAndDeletingAccount() throws Exception {
-        /* Voici comment traiter une fenêtre modale avec uispec4j.
-         * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
-         */
+
+    public void testAddT1() throws Exception {
         WindowInterceptor.init(accountsButton.triggerClick())
                 .process(new WindowHandler() {
                     public Trigger process(Window window) {
-// setup
+                        // setup
                         accountsTable = window.getTable();
                         int initialRowCount = accountsTable.getRowCount();
-// ajouter un compte
-                        window.getTextBox("NAME_TEXT_FIELD").setText("Jo Bleault");
-                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("Savings");
+
+                        // ajouter un compte
+                        window.getTextBox("NAME_TEXT_FIELD").setText("");
+                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("NameDescription");
+                        // fin ajout de la ligne
                         window.getButton("Add Account").click();
-                        assertEquals("not right",accountsTable.getRowCount(), initialRowCount+1);
-// supprimer le compte cree precedemment en cherchant le nom
-                        accountsTable.selectRowsWithText(0, "Jo Bleault");
 
-                         accountsTable.selectAllRows();
-                         window.getButton("Delete Account").click();
+                        int finalRowCount =  accountsTable.getRowCount();
+                        Teardown(accountsTable,window);
+                        assertEquals("« Name not null»",finalRowCount, initialRowCount);
+                        return window.getButton("Close").triggerClick();
+
+                    }
+
+                }).run();
+    }
+    // fin Methode
+    // ajout methode
+    public void testAddT2() throws Exception {
+        WindowInterceptor.init(accountsButton.triggerClick())
+                .process(new WindowHandler() {
+                    public Trigger process(Window window) {
+                        // setup
+                        accountsTable = window.getTable();
+                        int initialRowCount = accountsTable.getRowCount();
+
+                        // ajouter un compte
+                        window.getTextBox("NAME_TEXT_FIELD").setText("MO");
+                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("NAMEDESCRIPTION");
+                        // fin ajout de la ligne
+                        window.getButton("Add Account").click();
+                        int finalRowCount =  accountsTable.getRowCount();
+                        Teardown(accountsTable,window);
+                        assertEquals("le nom doit être supérieur >2",finalRowCount, initialRowCount);
 
 
-                  //      assertEquals("not right testdelete",accountsTable.getRowCount(), 0);
+                        // retourner un "trigger" qui ferme la fenêtre modale
+                        return window.getButton("Close").triggerClick();
+                    }
+                }).run();
+    }
+    //Fin methode
+    //ajout Methode
+    public void testAddT3() throws Exception {
+        WindowInterceptor.init(accountsButton.triggerClick())
+                .process(new WindowHandler() {
+                    public Trigger process(Window window) {
+                        // setup
+                        accountsTable = window.getTable();
+                        int initialRowCount = accountsTable.getRowCount();
+
+                        // ajouter un compte
+                        window.getTextBox("NAME_TEXT_FIELD").setText("Azertyuiopqsdfghjklwxcvbnmet");
+                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("NameDescription");
+                        // fin ajout de la ligne
+                        window.getButton("Add Account").click();
+                        int finalRowCount =  accountsTable.getRowCount();
+
+                        Teardown(accountsTable,window);
+                        assertEquals("la longueur doit être inferieur a 25",finalRowCount, initialRowCount);
+
+
 // retourner un "trigger" qui ferme la fenêtre modale
                         return window.getButton("Close").triggerClick();
                     }
                 }).run();
     }
+    //fin methode
 
-    public void testT1() throws Exception {
-        /* Voici comment traiter une fenêtre modale avec uispec4j.
-         * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
-         */
+    // ajout methode
+    public void testAddT4() throws Exception {
         WindowInterceptor.init(accountsButton.triggerClick())
                 .process(new WindowHandler() {
                     public Trigger process(Window window) {
-// setup
+                        // setup
                         accountsTable = window.getTable();
                         int initialRowCount = accountsTable.getRowCount();
-// ajouter un compte
-                        window.getTextBox("NAME_TEXT_FIELD").setText("");
+
+                        // ajouter un compte
+                        window.getTextBox("NAME_TEXT_FIELD").setText("=&l$!!/ùù^^@£");
                         window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("NameDescription");
+                        // fin ajout de la ligne
                         window.getButton("Add Account").click();
-                        assertEquals("NE DOIT  PAS ACCEPTER UN NOM VIDE",accountsTable.getRowCount(), initialRowCount+1);
 
-//tear down
-                        while (accountsTable.getRowCount() !=0){
-                            accountsTable.selectAllRows();
-                            window.getButton("Delete Account").click();
-                        }
+                        int finalRowCount =  accountsTable.getRowCount();
+
+                        Teardown(accountsTable,window);
+                        assertEquals("on doit avoir un nom exact",finalRowCount, initialRowCount);
 
 
+// retourner un "trigger" qui ferme la fenêtre modale
                         return window.getButton("Close").triggerClick();
-                }
+                    }
+
                 }).run();
     }
-    public void testT2() throws Exception {
-        /* Voici comment traiter une fenêtre modale avec uispec4j.
-         * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
-         */
+    //fin methode
+    // ajout methode
+    public void testAddT5() throws Exception {
         WindowInterceptor.init(accountsButton.triggerClick())
                 .process(new WindowHandler() {
                     public Trigger process(Window window) {
-// setup
+                        // setup
                         accountsTable = window.getTable();
                         int initialRowCount = accountsTable.getRowCount();
-// ajouter un compte
-                        window.getTextBox("NAME_TEXT_FIELD").setText("MO");
-                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("NameDescription");
+
+                        // ajouter un compte
+                        window.getTextBox("NAME_TEXT_FIELD").setText("Med");
+                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("");
+                        // fin ajout de la ligne
                         window.getButton("Add Account").click();
-                        int FinalRowCount = accountsTable.getRowCount();
-                        //tear down vider le tableau avant  de verifier  l'assertion
-                        while (accountsTable.getRowCount() !=0){
-                            accountsTable.selectAllRows();
-                            window.getButton("Delete Account").click();
-                        }
 
-                        assertEquals("NE DOIT  PAS ACCEPTER UN NOM VIDE",FinalRowCount, initialRowCount+1);
+                        int finalRowCount =  accountsTable.getRowCount();
 
+                        Teardown(accountsTable,window);
+                        assertEquals("il faut donne une description pour chaque catégorie",finalRowCount, initialRowCount);
+
+
+// retourner un "trigger" qui ferme la fenêtre modale
+                        return window.getButton("Close").triggerClick();
+                    }
+
+                }).run();
+    }
+    //fin methode
+    //ajout methhode
+    public void testAddT6() throws Exception {
+        WindowInterceptor.init(accountsButton.triggerClick())
+                .process(new WindowHandler() {
+                    public Trigger process(Window window) {
+                        // setup
+                        accountsTable = window.getTable();
+                        int initialRowCount = accountsTable.getRowCount();
+
+                        // ajouter un compte
+                        window.getTextBox("NAME_TEXT_FIELD").setText("Med");
+                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("Me");
+                        // fin ajout de la ligne
+                        window.getButton("Add Account").click();
+
+                        int finalRowCount =  accountsTable.getRowCount();
+
+                        Teardown(accountsTable,window);
+                        assertEquals(" il faut que la longueur soit supérieure à 5",finalRowCount, initialRowCount);
+
+// retourner un "trigger" qui ferme la fenêtre modale
+                        return window.getButton("Close").triggerClick();
+                    }
+
+                }).run();
+    }
+    //fin methode
+    //ajout methode
+    public void testAddT7() throws Exception {
+        WindowInterceptor.init(accountsButton.triggerClick())
+                .process(new WindowHandler() {
+                    public Trigger process(Window window) {
+                        // setup
+                        accountsTable = window.getTable();
+                        int initialRowCount = accountsTable.getRowCount();
+
+                        // ajouter un compte
+                        window.getTextBox("NAME_TEXT_FIELD").setText("Med");
+                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("Dans ce laboratoire nous nous sommes familiarisés avec la librairie de classes UISpec4j, qui permet de développer des tests unitaires et fonctionnels faisant abstraction des composantes swings pour en faciliter l'implémentation. Nous avons utilisé ce framework pour faire des cas de tests en liens avec les méthodes ajouter ");
+                        // fin ajout de la ligne
+                        window.getButton("Add Account").click();
+                        int finalRowCount =  accountsTable.getRowCount();
+
+                        Teardown(accountsTable,window);
+                        assertEquals("il faut que la longueur soit inférieure à 250",finalRowCount, initialRowCount);
+
+
+// retourner un "trigger" qui ferme la fenêtre modale
+                        return window.getButton("Close").triggerClick();
+                    }
+
+                }).run();
+    }
+    //fin methode
+    //ajout methode
+    public void testAddT8() throws Exception {
+        WindowInterceptor.init(accountsButton.triggerClick())
+                .process(new WindowHandler() {
+                    public Trigger process(Window window) {
+                        // setup
+                        accountsTable = window.getTable();
+                        int initialRowCount = accountsTable.getRowCount();
+
+                        // ajouter un compte
+                        window.getTextBox("NAME_TEXT_FIELD").setText("Med");
+                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("Descr");
+                        // fin ajout de la ligne
+                        window.getButton("Add Account").click();
+                        int finalRowCount =  accountsTable.getRowCount();
+
+                        Teardown(accountsTable,window);
+                        // assertEquals("add account",finalRowCount, initialRowCount);
+
+
+// retourner un "trigger" qui ferme la fenêtre modale
                         return window.getButton("Close").triggerClick();
                     }
                 }).run();
     }
-    public void testT3() throws Exception {
-        /* Voici comment traiter une fenêtre modale avec uispec4j.
-         * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
-         */
+    //fin methode
+    //ajout methode
+    public void testAddT9() throws Exception {
         WindowInterceptor.init(accountsButton.triggerClick())
                 .process(new WindowHandler() {
                     public Trigger process(Window window) {
-// setup
+                        // setup
                         accountsTable = window.getTable();
                         int initialRowCount = accountsTable.getRowCount();
-// ajouter un compte
-                        window.getTextBox("NAME_TEXT_FIELD").setText("Azertyuiopqsdfghjklwxcvbnmet");
-                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("NameDescription");
+
+                        // ajouter un compte
+                        window.getTextBox("NAME_TEXT_FIELD").setText("azertyuiopqsdfghjklmwxcvb");
+                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("Medfnfjznizunfiznfiefninefi");
+                        // fin ajout de la ligne
                         window.getButton("Add Account").click();
-                        int FinalRowCount = accountsTable.getRowCount();
-                        //tear down vider le tableau avant  de verifier  l'assertion
-                        while (accountsTable.getRowCount() !=0){
-                            accountsTable.selectAllRows();
-                            window.getButton("Delete Account").click();
-                        }
 
-                        assertEquals("NE DOIT  PAS ACCEPTER UN NOM VIDE",FinalRowCount, initialRowCount+1);
+                        Teardown(accountsTable,window);
+                        // assertEquals("add account",finalRowCount, initialRowCount);
 
+
+// retourner un "trigger" qui ferme la fenêtre modale
                         return window.getButton("Close").triggerClick();
                     }
+
                 }).run();
     }
-    public void testT4() throws Exception {
-        /* Voici comment traiter une fenêtre modale avec uispec4j.
-         * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
-         */
-        WindowInterceptor.init(accountsButton.triggerClick())
-                .process(new WindowHandler() {
-                    public Trigger process(Window window) {
-// setup
-                        accountsTable = window.getTable();
-                        int initialRowCount = accountsTable.getRowCount();
-// ajouter un compte
-                        window.getTextBox("NAME_TEXT_FIELD").setText("=&l$!”3!”/ùù¨^^@£’");
-                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("NameDescription");
-                        window.getButton("Add Account").click();
-                        int FinalRowCount = accountsTable.getRowCount();
-                        //tear down vider le tableau avant  de verifier  l'assertion
-                       Teardown(accountsTable,window);
-//                        while (accountsTable.getRowCount() !=0){
-//                            accountsTable.selectAllRows();
-//                            window.getButton("Delete Account").click();
-//                        }
+    //fin methode
 
-                        assertEquals("NE DOIT  PAS ACCEPTER UN NOM VIDE",FinalRowCount, initialRowCount+1);
-
-                        return window.getButton("Close").triggerClick();
-                    }
-                }).run();
-    }
-
-    static  void Teardown(Table Tabletoteardown,Window window){
-        while (Tabletoteardown.getRowCount() !=0){
+    static  void Teardown(Table Tabletoteardown,Window window) {
+        while (Tabletoteardown.getRowCount() != 0) {
             Tabletoteardown.selectAllRows();
             window.getButton("Delete Account").click();
         }
 
-    }
 
+    }
 }
