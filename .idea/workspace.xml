@@ -6,10 +6,13 @@
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c400.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4b0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4b0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4d0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4d0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/AccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest.testAddT4">
+  <component name="RunManager" selected="JUnit.LedgerTest">
     <configuration type="JUnit" factoryName="JUnit">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
@@ -148,22 +151,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.testAddT4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinanceJ-Team03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.AccountTest" />
-      <option name="METHOD_NAME" value="testAddT4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LedgerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
@@ -179,7 +166,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LedgerTest.testL11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LedgerTest.testL1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
@@ -189,13 +176,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
       <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
-      <option name="METHOD_NAME" value="testL11" />
+      <option name="METHOD_NAME" value="testL1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LedgerTest.testL14" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LedgerTest.testL18" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
@@ -205,7 +192,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
       <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
-      <option name="METHOD_NAME" value="testL14" />
+      <option name="METHOD_NAME" value="testL18" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LedgerTest.testL20" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinanceJ-Team03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
+      <option name="METHOD_NAME" value="testL20" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -231,19 +234,19 @@
       <item itemvalue="Application.Login" />
       <item itemvalue="Application.Account" />
       <item itemvalue="JUnit.AccountTest" />
-      <item itemvalue="JUnit.LedgerTest.testL14" />
       <item itemvalue="JUnit.LedgerTest.testL21" />
       <item itemvalue="JUnit.LedgerTest" />
-      <item itemvalue="JUnit.LedgerTest.testL11" />
-      <item itemvalue="JUnit.AccountTest.testAddT4" />
+      <item itemvalue="JUnit.LedgerTest.testL18" />
+      <item itemvalue="JUnit.LedgerTest.testL1" />
+      <item itemvalue="JUnit.LedgerTest.testL20" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccountTest.testAddT4" />
         <item itemvalue="JUnit.LedgerTest" />
-        <item itemvalue="JUnit.LedgerTest.testL11" />
+        <item itemvalue="JUnit.LedgerTest.testL20" />
+        <item itemvalue="JUnit.LedgerTest.testL1" />
+        <item itemvalue="JUnit.LedgerTest.testL18" />
         <item itemvalue="JUnit.LedgerTest.testL21" />
-        <item itemvalue="JUnit.LedgerTest.testL14" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +285,7 @@
       <workItem from="1573424837357" duration="42000" />
       <workItem from="1573663735713" duration="3326000" />
       <workItem from="1573834912141" duration="627000" />
-      <workItem from="1574107633198" duration="40972000" />
+      <workItem from="1574107633198" duration="44942000" />
     </task>
     <task id="LOCAL-00001" summary="Changement de projet husqua etape 4.3">
       <created>1568819538099</created>
@@ -396,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574213448593</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="TEST aCCOUNT COMPLET">
+      <created>1574214423119</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1574214423119</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +437,8 @@
     <MESSAGE value="Ledgertest de base" />
     <MESSAGE value="TEST CATEGORY COMPLET" />
     <MESSAGE value="TEST LEDGER COMPLET V1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST LEDGER COMPLET V1.0" />
+    <MESSAGE value="TEST aCCOUNT COMPLET" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST aCCOUNT COMPLET" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -7,10 +7,48 @@ import org.uispec4j.interception.WindowHandler;
 import org.uispec4j.interception.WindowInterceptor;
 
 public class LedgerTest extends FinancejAbstractTest {
-
     private Table ledgerTable;
-    private Table accountTable;
-    private Table categoryTable;
+    private Table accountsTable;
+    private Table categoriesTable;
+    public void setup(){
+        WindowInterceptor.init(accountsButton.triggerClick())
+                .process(new WindowHandler() {
+                    public Trigger process(Window window) {
+                        // setup
+                        accountsTable = window.getTable();
+                        int initialRowCount = accountsTable.getRowCount();
+
+                        // ajouter un compte
+                        window.getTextBox("NAME_TEXT_FIELD").setText("Com1");
+                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("Description");
+                        // fin ajout de la ligne
+                        window.getButton("Add Account").click();
+                        return window.getButton("Close").triggerClick();
+
+                    }
+
+                }).run();
+
+
+        WindowInterceptor.init(categoriesButton.triggerClick())
+                .process(new WindowHandler() {
+                    public Trigger process(Window window) {
+// setup
+                        categoriesTable = window.getTable();
+                        int initialRowCount = categoriesTable.getRowCount();
+// ajouter un categorie
+                        window.getTextBox("NAME_TEXT_FIELD").setText("Cat1");
+                        window.getTextBox("DESCRIPTION_TEXT_FIELD").setText("Savings");
+                        window.getTextBox("BUDGET_TEXT_FIELD").setText("120");
+                        window.getButton("Add Category").click();
+
+                        return window.getButton("Close").triggerClick();
+                    }
+                }).run();
+
+    }
+
+
        public void testL20() throws Exception {
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
@@ -32,9 +70,9 @@ public class LedgerTest extends FinancejAbstractTest {
 
 
                         window.getButton("Add Transaction").click();
-                        assertEquals(ledgerTable.getRowCount(), initialRowCount+1);
+
 // supprimer la transaction cree precedemment en cherchant la descritption
-                        ledgerTable.selectRowsWithText(4, "descritpionledger");
+                        ledgerTable.selectRowsWithText(4, "Description");
                         window.getButton("Delete Transaction").click();
                         assertEquals(ledgerTable.getRowCount(), initialRowCount);
 // retourner un "trigger" qui ferme la fenêtre modale
@@ -536,6 +574,10 @@ public class LedgerTest extends FinancejAbstractTest {
     }
 
     public void testL18() throws Exception {
+
+
+
+
         /* Voici comment traiter une fenêtre modale avec uispec4j.
          * Voir "Intercepting windows and dialogs" dans la documentation en ligne.
          */
