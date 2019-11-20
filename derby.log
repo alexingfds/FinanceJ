@@ -1,13 +1,19 @@
 ----------------------------------------------------------------
-Fri Nov 15 11:49:48 EST 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-016e-6ff8-849e-000004974150 
-on database directory /Users/ken/IdeaProjects/FinanceJ-Team03/FinanceJDB with class loader sun.misc.Launcher$AppClassLoader@6bc7c054 
-Loaded from file:/Users/ken/.m2/repository/org/apache/derby/derby/10.11.1.1/derby-10.11.1.1.jar
+Tue Nov 19 20:38:42 EST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-016e-8676-2fe1-00000d73b578 
+on database directory C:\Users\richa\IdeaProjects\FinanceJ-Team03\FinanceJDB with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/C:/Users/richa/.m2/repository/org/apache/derby/derby/10.11.1.1/derby-10.11.1.1.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_221-b11
-user.dir=/Users/ken/IdeaProjects/FinanceJ-Team03
-os.name=Mac OS X
-os.arch=x86_64
-os.version=10.14.6
+java.runtime.version=1.8.0_191-b12
+user.dir=C:\Users\richa\IdeaProjects\FinanceJ-Team03
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 19 20:38:43 EST 2019: Shutting down Derby engine
+----------------------------------------------------------------
+Tue Nov 19 20:38:43 EST 2019:
+Shutting down instance a816c00e-016e-8676-2fe1-00000d73b578 on database directory C:\Users\richa\IdeaProjects\FinanceJ-Team03\FinanceJDB with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+----------------------------------------------------------------

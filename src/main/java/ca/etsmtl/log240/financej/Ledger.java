@@ -101,17 +101,24 @@ public class Ledger extends javax.swing.JDialog {
         AddTransactionButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         DateTextField = new javax.swing.JTextField();
+        DateTextField.setName("DATE_TEXT_FIELD");
         jLabel3 = new javax.swing.JLabel();
         DescriptionTextField = new javax.swing.JTextField();
+        DescriptionTextField.setName("DESCRIPTION_TEXT_FIELD");
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         AmountTextField = new javax.swing.JTextField();
+        AmountTextField.setName("AMOUNT_TEXT_FIELD");
         jLabel6 = new javax.swing.JLabel();
         PayeeTextField = new javax.swing.JTextField();
+        PayeeTextField.setName("PAYEE_TEXT_FIELD");
         RecCheckBox = new javax.swing.JCheckBox();
+        RecCheckBox.setName("REC_CHECK_BOX");
         CategoryComboBox = new javax.swing.JComboBox();
+        CategoryComboBox.setName("CATEGORY_COMBO_BOX");
         DeleteTransactionButton = new javax.swing.JButton();
         AccountsComboBox = new javax.swing.JComboBox();
+        AccountsComboBox.setName("ACCOUNTS_COMBO_BOX");
         jLabel1 = new javax.swing.JLabel();
         TotalLabel = new javax.swing.JLabel();
 
