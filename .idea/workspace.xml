@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" afterDir="false" />
@@ -13,9 +14,7 @@
       <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4d0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4d0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/FinancejAbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/FinancejAbstractTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CategoryTest">
+  <component name="RunManager" selected="JUnit.LedgerTest">
     <configuration type="JUnit" factoryName="JUnit">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
@@ -154,7 +153,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.testT2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LedgerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
@@ -163,45 +162,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.AccountTest" />
-      <option name="METHOD_NAME" value="testT2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountTest.testT4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinanceJ-Team03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.AccountTest" />
-      <option name="METHOD_NAME" value="testT4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinanceJ-Team03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.CategoryTest" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryTest.testC1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LedgerTest.testL11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
@@ -210,14 +177,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.CategoryTest" />
-      <option name="METHOD_NAME" value="testC1" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
+      <option name="METHOD_NAME" value="testL11" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryTest.testC12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LedgerTest.testL14" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
@@ -226,8 +193,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.CategoryTest" />
-      <option name="METHOD_NAME" value="testC12" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
+      <option name="METHOD_NAME" value="testL14" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LedgerTest.testL21" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinanceJ-Team03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
+      <option name="METHOD_NAME" value="testL21" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LedgerTest.testL5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinanceJ-Team03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
+      <option name="METHOD_NAME" value="testL5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -237,19 +236,19 @@
       <item itemvalue="Application.Login" />
       <item itemvalue="Application.Account" />
       <item itemvalue="JUnit.AccountTest" />
-      <item itemvalue="JUnit.AccountTest.testT2" />
-      <item itemvalue="JUnit.AccountTest.testT4" />
-      <item itemvalue="JUnit.CategoryTest.testC1" />
-      <item itemvalue="JUnit.CategoryTest" />
-      <item itemvalue="JUnit.CategoryTest.testC12" />
+      <item itemvalue="JUnit.LedgerTest.testL5" />
+      <item itemvalue="JUnit.LedgerTest.testL14" />
+      <item itemvalue="JUnit.LedgerTest.testL21" />
+      <item itemvalue="JUnit.LedgerTest" />
+      <item itemvalue="JUnit.LedgerTest.testL11" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CategoryTest" />
-        <item itemvalue="JUnit.CategoryTest.testC12" />
-        <item itemvalue="JUnit.CategoryTest.testC1" />
-        <item itemvalue="JUnit.AccountTest.testT4" />
-        <item itemvalue="JUnit.AccountTest.testT2" />
+        <item itemvalue="JUnit.LedgerTest" />
+        <item itemvalue="JUnit.LedgerTest.testL11" />
+        <item itemvalue="JUnit.LedgerTest.testL21" />
+        <item itemvalue="JUnit.LedgerTest.testL14" />
+        <item itemvalue="JUnit.LedgerTest.testL5" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +287,7 @@
       <workItem from="1573424837357" duration="42000" />
       <workItem from="1573663735713" duration="3326000" />
       <workItem from="1573834912141" duration="627000" />
-      <workItem from="1574107633198" duration="32514000" />
+      <workItem from="1574107633198" duration="39896000" />
     </task>
     <task id="LOCAL-00001" summary="Changement de projet husqua etape 4.3">
       <created>1568819538099</created>
@@ -388,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574114904497</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="TEST CATEGORY COMPLET">
+      <created>1574205886922</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1574205886922</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +423,8 @@
     <MESSAGE value="Ajouter gabarit des classes testes CategoryTest, LedgerTest,ReportsTest" />
     <MESSAGE value="debut de teste Categies" />
     <MESSAGE value="Ledgertest de base" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ledgertest de base" />
+    <MESSAGE value="TEST CATEGORY COMPLET" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST CATEGORY COMPLET" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
