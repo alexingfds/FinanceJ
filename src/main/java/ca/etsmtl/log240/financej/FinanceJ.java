@@ -16,148 +16,158 @@ import java.sql.*;
  * @author  rovitotv
  */
 public class FinanceJ extends javax.swing.JFrame {
-    // define the driver to use 
+
+
+
+    // define the driver to use
     private static String driver = "org.apache.derby.jdbc.EmbeddedDriver";
-    // the database name  
-    private static String dbName = "FinanceJDB";
-    // define the Derby connection URL to use 
-    private static String connectionURL = "jdbc:derby:" + dbName + ";create=true";
-    private static Connection conn = null;
+
+  // the database name
+  private static String dbName = "FinanceJDB";
+  // define the Derby connection URL to use
+  private static String connectionURL = "jdbc:derby:" + dbName + ";create=true";
+  private static Connection conn = null;
+
+
     //private Login login;
-    private Account AccountDialog;
+    private AccountDialog AccountDialog;
     private Category CategoryDialog;
     private Ledger LedgerDialog;
     private Reports ReportsDialog;
     private AccountTotalTableModel dataModel;
+
+    DerbyUtils derbyUtils ;
     
-  private static void LoadDBDriver() {
-        try {
-            /*
-             **  Load the Derby driver. 
-             **     When the embedded Driver is used this action start the Derby engine.
-             **  Catch an error and suggest a CLASSPATH problem
-             */
-           Class.forName(driver).newInstance();
-            System.out.println(driver + " loaded. ");
-        } catch (java.lang.ClassNotFoundException e) {
-            System.err.print("ClassNotFoundException: ");
-            System.err.println(e.getMessage());
-            System.out.println("\n    >>> Please check your CLASSPATH variable   <<<\n");
-        } catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-        	System.out.println("\n    >>> Instantiation Exception   <<<\n");
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			System.out.println("\n    >>> Illegal Access Exception   <<<\n");
-			e.printStackTrace();
-		}
-    } 
-
-    public static void CreateDBConnection() {
-        try {
-            conn = DriverManager.getConnection(connectionURL);
-            System.out.println("Connected to database " + dbName);
-        } catch (Throwable e) {
-            /*       Catch all exceptions and pass them to 
-             **       the exception reporting method             */
-            System.out.println(" . . . exception thrown:");
-            errorPrint(e);
-        }
-    }
-
-    private static void CreateDBTables() {
-        String CreateStringAccount = "create table account (name varchar(50) primary key, description varchar(250))";
-        String CreateStringCategory = "create table category (name varchar(50) primary key, description varchar(250), budget float)";
-        String CreateStringLedger = "create table ledger (id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),rec integer, tdate date, payee  varchar(50), description varchar(250), account varchar(50), category varchar(50), amount float)";
-        Statement s;
-
-        try {
-            s = conn.createStatement();
-            if (!DBUtils.ChkTableAccount(conn)) {
-                System.out.println(" . . . . creating table account");
-                s.execute(CreateStringAccount);
-            }
-            if (!DBUtils.ChkTableCategory(conn)) {
-                System.out.println(" . . . . creating table category");
-                s.execute(CreateStringCategory);
-            }
-            if (!DBUtils.ChkTableLedger(conn)) {
-                System.out.println(" . . . . creating table ledger");
-                s.execute(CreateStringLedger);
-            }
-        
-            s.close();
-        } catch (Throwable e) {
-            System.out.println(" . . . exception thrown:");
-            errorPrint(e);
-        }
-    }
-
-    public static void ShutdownDB() {
-        try {
-            conn.close();
-            System.out.println("Closed connection");
-        } catch (Throwable e) {
-            System.out.println(" . . . exception thrown:");
-            errorPrint(e);
-        }
-
-        /*** In embedded mode, an application should shut down Derby.
-        Shutdown throws the XJ015 exception to confirm success. ***/
-        if (driver.equals("org.apache.derby.jdbc.EmbeddedDriver")) {
-            boolean gotSQLExc = false;
-            try {
-                DriverManager.getConnection("jdbc:derby:;shutdown=true");
-            } catch (SQLException se) {
-                if (se.getSQLState().equals("XJ015")) {
-                    gotSQLExc = true;
-                }
-            }
-            if (!gotSQLExc) {
-                System.out.println("Database did not shut down normally");
-            } else {
-                System.out.println("Database shut down normally");
-            }
-        }
-    }
+//  private static void LoadDBDriver() {
+//        try {
+//            /*
+//             **  Load the Derby driver.
+//             **     When the embedded Driver is used this action start the Derby engine.
+//             **  Catch an error and suggest a CLASSPATH problem
+//             */
+//           Class.forName(driver).newInstance();
+//            System.out.println(driver + " loaded. ");
+//        } catch (java.lang.ClassNotFoundException e) {
+//            System.err.print("ClassNotFoundException: ");
+//            System.err.println(e.getMessage());
+//            System.out.println("\n    >>> Please check your CLASSPATH variable   <<<\n");
+//        } catch (InstantiationException e) {
+//			// TODO Auto-generated catch block
+//        	System.out.println("\n    >>> Instantiation Exception   <<<\n");
+//			e.printStackTrace();
+//		} catch (IllegalAccessException e) {
+//			// TODO Auto-generated catch block
+//			System.out.println("\n    >>> Illegal Access Exception   <<<\n");
+//			e.printStackTrace();
+//		}
+//    }
+//
+//    public static void CreateDBConnection() {
+//        try {
+//            conn = DriverManager.getConnection(connectionURL);
+//            System.out.println("Connected to database " + dbName);
+//        } catch (Throwable e) {
+//            /*       Catch all exceptions and pass them to
+//             **       the exception reporting method             */
+//            System.out.println(" . . . exception thrown:");
+//            errorPrint(e);
+//        }
+//    }
+//
+//    private static void CreateDBTables() {
+//        String CreateStringAccount = "create table account (name varchar(50) primary key, description varchar(250))";
+//        String CreateStringCategory = "create table category (name varchar(50) primary key, description varchar(250), budget float)";
+//        String CreateStringLedger = "create table ledger (id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),rec integer, tdate date, payee  varchar(50), description varchar(250), account varchar(50), category varchar(50), amount float)";
+//        Statement s;
+//
+//        try {
+//            s = conn.createStatement();
+//            if (!DBUtils.ChkTableAccount(conn)) {
+//                System.out.println(" . . . . creating table account");
+//                s.execute(CreateStringAccount);
+//            }
+//            if (!DBUtils.ChkTableCategory(conn)) {
+//                System.out.println(" . . . . creating table category");
+//                s.execute(CreateStringCategory);
+//            }
+//            if (!DBUtils.ChkTableLedger(conn)) {
+//                System.out.println(" . . . . creating table ledger");
+//                s.execute(CreateStringLedger);
+//            }
+//
+//            s.close();
+//        } catch (Throwable e) {
+//            System.out.println(" . . . exception thrown:");
+//            errorPrint(e);
+//        }
+//    }
+//
+//    public static void ShutdownDB() {
+//        try {
+//            conn.close();
+//            System.out.println("Closed connection");
+//        } catch (Throwable e) {
+//            System.out.println(" . . . exception thrown:");
+//            errorPrint(e);
+//        }
+//
+//        /*** In embedded mode, an application should shut down Derby.
+//        Shutdown throws the XJ015 exception to confirm success. ***/
+//        if (driver.equals("org.apache.derby.jdbc.EmbeddedDriver")) {
+//            boolean gotSQLExc = false;
+//            try {
+//                DriverManager.getConnection("jdbc:derby:;shutdown=true");
+//            } catch (SQLException se) {
+//                if (se.getSQLState().equals("XJ015")) {
+//                    gotSQLExc = true;
+//                }
+//            }
+//            if (!gotSQLExc) {
+//                System.out.println("Database did not shut down normally");
+//            } else {
+//                System.out.println("Database shut down normally");
+//            }
+//        }
+//    }
     
-    public void UpdateTotal() {
-        ResultSet LedgerResult;
-        Statement s;
-        String TotalStr;
-
-        TotalStr = "$0.00";
-        if (conn != null) {
-            try {
-                s = conn.createStatement();
-                LedgerResult = s.executeQuery("select sum(amount) from ledger");
-                while (LedgerResult.next()) {
-                    if (LedgerResult.getFloat(1) <= 0) {
-                        Color fg = new Color(255,51,50);
-                        TotalLabel.setForeground(fg);
-                    } else {
-                        Color fg = new Color(0, 0, 0);
-                        TotalLabel.setForeground(fg);
-                    }
-                  TotalStr = String.format("$%12.2f", LedgerResult.getFloat(1));
-                  TotalLabel.setText(TotalStr);
-                }
-            } catch (Throwable e) {
-                System.out.println(" . . . exception thrown: in AccountListTableModel getValueAt");
-                e.printStackTrace();
-            }
-        }
-    
-    }
+//    public void UpdateTotal() {
+//        ResultSet LedgerResult;
+//        Statement s;
+//        String TotalStr;
+//
+//        TotalStr = "$0.00";
+//        if (conn != null) {
+//            try {
+//                s = conn.createStatement();
+//                LedgerResult = s.executeQuery("select sum(amount) from ledger");
+//                while (LedgerResult.next()) {
+//                    if (LedgerResult.getFloat(1) <= 0) {
+//                        Color fg = new Color(255,51,50);
+//                        TotalLabel.setForeground(fg);
+//                    } else {
+//                        Color fg = new Color(0, 0, 0);
+//                        TotalLabel.setForeground(fg);
+//                    }
+//                  TotalStr = String.format("$%12.2f", LedgerResult.getFloat(1));
+//                  TotalLabel.setText(TotalStr);
+//                }
+//            } catch (Throwable e) {
+//                System.out.println(" . . . exception thrown: in AccountListTableModel getValueAt");
+//                e.printStackTrace();
+//            }
+//        }
+//
+//    }
 
 
     /** Creates new form FinanceJ */
     public FinanceJ() {
 
-        LoadDBDriver();
-        CreateDBConnection();
-        CreateDBTables();
+//        LoadDBDriver();
+//        CreateDBConnection();
+//        CreateDBTables();
+        derbyUtils = DerbyUtils.getInstance();
+        conn=derbyUtils.getConnexion();
 
         initComponents();
 
@@ -165,7 +175,7 @@ public class FinanceJ extends javax.swing.JFrame {
         LedgerDialog.setVisible(false);
         LedgerDialog.SetDBConnection(conn);
 
-        AccountDialog = new Account(this, true);
+        AccountDialog = new AccountDialog(this, true);
         AccountDialog.setVisible(false);
         AccountDialog.SetDBConnection(conn);
         
@@ -180,8 +190,8 @@ public class FinanceJ extends javax.swing.JFrame {
         dataModel = new AccountTotalTableModel(conn);
         AccountTotalTable.setModel(dataModel);
         AccountTotalTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        
-        UpdateTotal();
+
+        derbyUtils.UpdateTotal();
     }
     /** This method is called from within the constructor to
      * initialize the form.
@@ -335,7 +345,7 @@ public class FinanceJ extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowClosing() {//GEN-FIRST:event_formWindowClosing
-        ShutdownDB();
+        derbyUtils.ShutdownDB();
     }//GEN-LAST:event_formWindowClosing
 
     private void ExitButtonActionPerformed() {//GEN-FIRST:event_ExitButtonActionPerformed
@@ -343,7 +353,7 @@ public class FinanceJ extends javax.swing.JFrame {
     }//GEN-LAST:event_ExitButtonActionPerformed
 
     private void formWindowClosed() {//GEN-FIRST:event_formWindowClosed
-        ShutdownDB();
+        derbyUtils.ShutdownDB();
     }//GEN-LAST:event_formWindowClosed
 
     private void AccountButtonActionPerformed() {//GEN-FIRST:event_AccountButtonActionPerformed
@@ -362,8 +372,8 @@ public class FinanceJ extends javax.swing.JFrame {
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // refreshes the window
-        dataModel.fireTableDataChanged();        
-        UpdateTotal();
+        dataModel.fireTableDataChanged();
+        derbyUtils.UpdateTotal();
     }//GEN-LAST:event_formWindowActivated
 
     private void ReportsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReportsButtonActionPerformed
@@ -390,32 +400,32 @@ public class FinanceJ extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
-    //   ## DERBY EXCEPTION REPORTING CLASSES  ## 
-    /***     Exception reporting methods
-     **      with special handling of SQLExceptions
-     ***/
-    static void errorPrint(Throwable e) {
-        if (e instanceof SQLException) {
-            SQLExceptionPrint((SQLException) e);
-        } else {
-            System.out.println("A non SQL error occured.");
-            e.printStackTrace();
-        }
-
-    }  // END errorPrint 
-
-    //  Iterates through a stack of SQLExceptions 
-    static void SQLExceptionPrint(SQLException sqle) {
-        while (sqle != null) {
-            System.out.println("\n---SQLException Caught---\n");
-            System.out.println("SQLState:   " + (sqle).getSQLState());
-            System.out.println("Severity: " + (sqle).getErrorCode());
-            System.out.println("Message:  " + (sqle).getMessage());
-            sqle.printStackTrace();
-            sqle =
-                    sqle.getNextException();
-        }
-    }  //  END SQLExceptionPrint   	
+//    //   ## DERBY EXCEPTION REPORTING CLASSES  ##
+//    /***     Exception reporting methods
+//     **      with special handling of SQLExceptions
+//     ***/
+//    static void errorPrint(Throwable e) {
+//        if (e instanceof SQLException) {
+//            SQLExceptionPrint((SQLException) e);
+//        } else {
+//            System.out.println("A non SQL error occured.");
+//            e.printStackTrace();
+//        }
+//
+//    }  // END errorPrint
+//
+//    //  Iterates through a stack of SQLExceptions
+//    static void SQLExceptionPrint(SQLException sqle) {
+//        while (sqle != null) {
+//            System.out.println("\n---SQLException Caught---\n");
+//            System.out.println("SQLState:   " + (sqle).getSQLState());
+//            System.out.println("Severity: " + (sqle).getErrorCode());
+//            System.out.println("Message:  " + (sqle).getMessage());
+//            sqle.printStackTrace();
+//            sqle =
+//                    sqle.getNextException();
+//        }
+//    }  //  END SQLExceptionPrint
 
 }
 
