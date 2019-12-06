@@ -1,10 +1,7 @@
 package ca.etsmtl.log240.financej;
 
 import javax.swing.table.AbstractTableModel;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
 
 public class AccountTableModel extends AbstractTableModel {
@@ -12,11 +9,13 @@ public class AccountTableModel extends AbstractTableModel {
         private String[] columnNames = {"Name", "Description"};
         private Connection conn;
 
+        AccountDAO accountDAO;
 
         public  AccountTableModel (Connection DBConn) {
              conn = DBConn;
              //a voir
-            AccountDAO accountDAO=new AccountDAO(conn);
+            accountDAO=new AccountDAO(conn);
+
             //se connecter à la bdd
 //            DerbyUtils derbyUtils = DerbyUtils.getInstance();
 //            conn = derbyUtils.getConnexion();
@@ -33,7 +32,8 @@ public class AccountTableModel extends AbstractTableModel {
             if (conn != null) {
                 try {
                     s = conn.createStatement();
-                    AccountResult = s.executeQuery("select count(name) from account");
+                   // AccountResult = s.executeQuery("select count(name) from account");
+                    AccountResult = accountDAO.getRowCount();
                     while (AccountResult.next()) {
                         return AccountResult.getInt(1);
                     }
@@ -51,6 +51,7 @@ public class AccountTableModel extends AbstractTableModel {
         }
 
         public Object getValueAt(int row, int col) {
+           // return accountDAO.getAccount(row,col);
             ResultSet AccountResult;
             Statement s;
             int CurrentRow = 0;
@@ -59,6 +60,7 @@ public class AccountTableModel extends AbstractTableModel {
                 try {
                     s = conn.createStatement();
                     AccountResult = s.executeQuery("select * from account order by name");
+                    //AccountResult=accountDAO.getAccount();
                     while (AccountResult.next()) {
                         if (CurrentRow == row) {
                             if (col == 0) {
@@ -97,57 +99,33 @@ public class AccountTableModel extends AbstractTableModel {
             String SQLString;
 
             String AccountName;
-            try {
-                AccountName = (String) getValueAt(row, 0);
-                Statement s = conn.createStatement();
-                SQLString = "update account set description ='" + (String) value + "' where name = '" + AccountName + "'";
-                System.out.println(SQLString);
-                s.execute(SQLString);
+            AccountName = (String) getValueAt(row, 0);
 
+            try {
+                accountDAO.updateAccount(value,AccountName);
                 fireTableCellUpdated(row, col);
-            } catch (Throwable e) {
-                System.out.println(" . . . exception thrown: in setValueAt in AccountDialog.java");
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
+
         }
 
         void DeleteAccount(int row) {
-            Statement s;
-            String AccountName;
-            String SQLString;
 
-            if (conn != null) {
-                try {
-                    AccountName = (String) getValueAt(row, 0);
-                    s = conn.createStatement();
-                    SQLString = "DELETE FROM account WHERE name = '" + AccountName + "'";
-                    System.out.println(SQLString);
-                    s.executeUpdate(SQLString);
-                    fireTableDataChanged();
-                } catch (Throwable e) {
-                    System.out.println(" . . . exception thrown: in AccountListTableModel DeleteAccount");
-                    e.printStackTrace();
-                }
-            }
+            String AccountName;
+            AccountName = (String) getValueAt(row, 0);
+            accountDAO.deleteAccount(AccountName);
+            fireTableDataChanged();
+
         }
 
         public int AddAccount(String Name, String Description) {
+
             int ErrorCode = 0;
-            PreparedStatement psInsert;
 
-            try {
-                psInsert = conn.prepareStatement("insert into account(name, description) values(?,?)");
-                psInsert.setString(1, Name);
-                psInsert.setString(2, Description);
-
-                psInsert.executeUpdate();
-                fireTableRowsInserted(getRowCount() + 1, getRowCount() + 1);
-            } catch (Throwable e) {
-                System.out.println(" . . . exception thrown: AddAccount");
-                e.printStackTrace();
-                ErrorCode = 1;
-            }
-
+            ErrorCode=accountDAO.addAccount(Name, Description);
+            if(ErrorCode == 0)
+                  fireTableRowsInserted(getRowCount() + 1, getRowCount() + 1);
             return ErrorCode;
         }
     }

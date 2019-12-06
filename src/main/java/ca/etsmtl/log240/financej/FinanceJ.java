@@ -451,7 +451,8 @@ class AccountTotalTableModel extends AbstractTableModel {
         if (conn != null) {
             try {
                 s = conn.createStatement();
-                AccountResult = s.executeQuery("select account, sum(amount) from ledger group by account");
+               AccountResult = s.executeQuery("select account, sum(amount) from ledger group by account");
+
                 while (AccountResult.next()) {
                     NumRecords++;
                 }

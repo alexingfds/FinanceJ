@@ -191,7 +191,26 @@ public class DerbyUtils {
         }
 
     }
+public  ResultSet requetSetAcount(){
 
+    ResultSet AccountResult = null;
+    Statement s;
+
+    if (connexion != null) {
+        try {
+            s = connexion.createStatement();
+            AccountResult = s.executeQuery("select count(name) from account");
+//                while (AccountResult.next()) {
+//                    return AccountResult.getInt(1);
+//                }
+        } catch (Throwable e) {
+            System.out.println(" . . . exception thrown: in AccountListTableModel getRowCount");
+            e.printStackTrace();
+        }
+    }
+
+    return AccountResult;
+}
 
 }
 
