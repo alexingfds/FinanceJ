@@ -334,6 +334,7 @@ class AccountTotalTableModel extends AbstractTableModel {
     }
 
     public int getRowCount() {
+        AccountDAO compt=new AccountDAO(conn);
         ResultSet AccountResult;
         Statement s;
         int NumRecords = 0;
@@ -341,7 +342,8 @@ class AccountTotalTableModel extends AbstractTableModel {
         if (conn != null) {
             try {
                 s = conn.createStatement();
-               AccountResult = s.executeQuery("select account, sum(amount) from ledger group by account");
+               //AccountResult = s.executeQuery("select account, sum(amount) from ledger group by account");
+                AccountResult = compt.getValueAt();
 
 
                 while (AccountResult.next()) {
@@ -361,6 +363,7 @@ class AccountTotalTableModel extends AbstractTableModel {
     }
 
     public Object getValueAt(int row, int col) {
+        AccountDAO compt=new AccountDAO(conn);
         ResultSet AccountResult;
         Statement s;
         int CurrentRow = 0;
@@ -368,7 +371,8 @@ class AccountTotalTableModel extends AbstractTableModel {
         if (conn != null) {
             try {
                 s = conn.createStatement();
-                AccountResult = s.executeQuery("select account, sum(amount) from ledger group by account");
+                //AccountResult = s.executeQuery("select account, sum(amount) from ledger group by account");
+                AccountResult = compt.getValueAt();
                 while (AccountResult.next()) {
                     if (CurrentRow == row) {
                         if (col == 0) {

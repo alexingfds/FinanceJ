@@ -137,7 +137,46 @@ public class AccountDAO {
         }
         return LedgerResult;
     }
+    public ResultSet getValueAt(){
+
+        ResultSet AccountResult = null;
+        Statement s;
+        int CurrentRow = 0;
+
+        if (conn != null) {
+            try {
+                s = conn.createStatement();
+                AccountResult = s.executeQuery("select account, sum(amount) from ledger group by account");
+
+            } catch (Throwable e) {
+                System.out.println(" . . . exception thrown: in AccountListTableModel getValueAt");
+                e.printStackTrace();
+            }
+        }
+        return AccountResult;
+    }
+//    public int getRowCount() {
+//        ResultSet AccountResult;
+//        Statement s;
+//        int NumRecords = 0;
 //
+//        if (conn != null) {
+//            try {
+//                s = conn.createStatement();
+//                AccountResult = s.executeQuery("select account, sum(amount) from ledger group by account");
+//
+//
+//                while (AccountResult.next()) {
+//                    NumRecords++;
+//                }
+//            } catch (Throwable e) {
+//                System.out.println(" . . . exception thrown: in AccountListTableModel getRowCount");
+//                e.printStackTrace();
+//            }
+//        }
+//
+//        return NumRecords;
+//    }
     //updateAccount()
     //deleteAccount()
     //addAccount()
