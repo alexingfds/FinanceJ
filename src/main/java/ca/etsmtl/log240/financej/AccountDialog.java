@@ -183,6 +183,24 @@ public class AccountDialog extends javax.swing.JDialog {
 	private void AddAccountButtonActionPerformed() {//GEN-FIRST:event_AddAccountButtonActionPerformed
 		int ReturnCode;
 
+//************** ken
+//		public class Test {
+//			public static void main (String [] args) {
+//				String regExpression = "[a-zA-Z_0-9]*";
+//				String sample = "abcde";
+//
+//				boolean b = sample.matches(regExpression);
+//
+//				System.out.println (b);
+//			}
+//		}
+	if(NameTextField.getText().length()==0){
+
+		JOptionPane.showMessageDialog(this,
+				"nom vide ",
+				"Error", JOptionPane.ERROR_MESSAGE);
+
+	}else {
 		ReturnCode = dataModel.AddAccount(NameTextField.getText(), DescriptionTextField.getText());
 		if (ReturnCode == 0) {
 			NameTextField.setText("");
@@ -192,6 +210,7 @@ public class AccountDialog extends javax.swing.JDialog {
 					"Error Adding account to database.  Make sure the account name you specified does not already exist.",
 					"Error", JOptionPane.ERROR_MESSAGE);
 		}
+	}
 	}//GEN-LAST:event_AddAccountButtonActionPerformed
 
 	/**
