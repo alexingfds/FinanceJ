@@ -1,6 +1,6 @@
 package ca.etsmtl.log240.financej;
 /*
- * Account.java
+ * AccountDialog.java
  *
  * Created on March 5, 2008, 11:08 PM
  */
@@ -13,19 +13,19 @@ import javax.swing.*;
  *
  * @author  rovitotv
  */
-public class Account extends javax.swing.JDialog {
+public class AccountDialog extends javax.swing.JDialog {
 
-	private AccountListTableModel dataModel;
+	private AccountTableModel dataModel;
 
 	/** Creates new form Account */
-	public Account(java.awt.Frame parent, boolean modal) {
+	public AccountDialog(java.awt.Frame parent, boolean modal) {
 		super(parent, modal);
 		initComponents();
 		AccountListTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 	}
 
 	public void SetDBConnection(Connection DBConn) {
-		dataModel = new AccountListTableModel(DBConn);
+		dataModel = new AccountTableModel(DBConn);
 		AccountListTable.setModel(dataModel);
 	}
 
@@ -183,6 +183,24 @@ public class Account extends javax.swing.JDialog {
 	private void AddAccountButtonActionPerformed() {//GEN-FIRST:event_AddAccountButtonActionPerformed
 		int ReturnCode;
 
+//************** ken
+//		public class Test {
+//			public static void main (String [] args) {
+//				String regExpression = "[a-zA-Z_0-9]*";
+//				String sample = "abcde";
+//
+//				boolean b = sample.matches(regExpression);
+//
+//				System.out.println (b);
+//			}
+//		}
+	if(NameTextField.getText().length()==0){
+
+		JOptionPane.showMessageDialog(this,
+				"nom vide ",
+				"Error", JOptionPane.ERROR_MESSAGE);
+
+	}else {
 		ReturnCode = dataModel.AddAccount(NameTextField.getText(), DescriptionTextField.getText());
 		if (ReturnCode == 0) {
 			NameTextField.setText("");
@@ -192,6 +210,7 @@ public class Account extends javax.swing.JDialog {
 					"Error Adding account to database.  Make sure the account name you specified does not already exist.",
 					"Error", JOptionPane.ERROR_MESSAGE);
 		}
+	}
 	}//GEN-LAST:event_AddAccountButtonActionPerformed
 
 	/**
@@ -201,7 +220,7 @@ public class Account extends javax.swing.JDialog {
 		java.awt.EventQueue.invokeLater(new Runnable() {
 
 			public void run() {
-				Account dialog = new Account(new javax.swing.JFrame(), true);
+				AccountDialog dialog = new AccountDialog(new javax.swing.JFrame(), true);
 				dialog.addWindowListener(new java.awt.event.WindowAdapter() {
 
 					public void windowClosing(java.awt.event.WindowEvent e) {
@@ -220,141 +239,3 @@ public class Account extends javax.swing.JDialog {
 	// End of variables declaration//GEN-END:variables
 }
 
-class AccountListTableModel extends AbstractTableModel {
-
-	private String[] columnNames = {"Name", "Description"};
-	private Connection conn;
-
-	public AccountListTableModel(Connection DBConn) {
-		conn = DBConn;
-	}
-
-	public int getColumnCount() {
-		return columnNames.length;
-	}
-
-	public int getRowCount() {
-		ResultSet AccountResult;
-		Statement s;
-
-		if (conn != null) {
-			try {
-				s = conn.createStatement();
-				AccountResult = s.executeQuery("select count(name) from account");
-				while (AccountResult.next()) {
-					return AccountResult.getInt(1);
-				}
-			} catch (Throwable e) {
-				System.out.println(" . . . exception thrown: in AccountListTableModel getRowCount");
-				e.printStackTrace();
-			}
-		}
-
-		return 0;
-	}
-
-	public String getColumnName(int col) {
-		return columnNames[col];
-	}
-
-	public Object getValueAt(int row, int col) {
-		ResultSet AccountResult;
-		Statement s;
-		int CurrentRow = 0;
-
-		if (conn != null) {
-			try {
-				s = conn.createStatement();
-				AccountResult = s.executeQuery("select * from account order by name");
-				while (AccountResult.next()) {
-					if (CurrentRow == row) {
-						if (col == 0) {
-							return AccountResult.getString(1);
-						} else if (col == 1) {
-							return AccountResult.getString(2);
-						}
-					}
-					CurrentRow++;
-				}
-			} catch (Throwable e) {
-				System.out.println(" . . . exception thrown: in AccountListTableModel getValueAt");
-				e.printStackTrace();
-			}
-		}
-		return "";
-	}
-
-	public Class getColumnClass(int c) {
-		return getValueAt(0, c).getClass();
-	}
-
-	/*
-	 * Don't need to implement this method unless your table's
-	 * editable.
-	 */
-	public boolean isCellEditable(int row, int col) {
-		//Note that the data/cell address is constant,
-		//no matter where the cell appears onscreen.
-
-
-		return col != 0;
-	}
-
-	public void setValueAt(Object value, int row, int col) {
-		String SQLString;
-
-		String AccountName;
-		try {
-			AccountName = (String) getValueAt(row, 0);
-			Statement s = conn.createStatement();
-			SQLString = "update account set description ='" + (String) value + "' where name = '" + AccountName + "'";
-			System.out.println(SQLString);
-			s.execute(SQLString);
-
-			fireTableCellUpdated(row, col);
-		} catch (Throwable e) {
-			System.out.println(" . . . exception thrown: in setValueAt in Account.java");
-			e.printStackTrace();
-		}
-	}
-
-	void DeleteAccount(int row) {
-		Statement s;
-		String AccountName;
-		String SQLString;
-
-		if (conn != null) {
-			try {
-				AccountName = (String) getValueAt(row, 0);
-				s = conn.createStatement();
-				SQLString = "DELETE FROM account WHERE name = '" + AccountName + "'";
-				System.out.println(SQLString);
-				s.executeUpdate(SQLString);
-				fireTableDataChanged();
-			} catch (Throwable e) {
-				System.out.println(" . . . exception thrown: in AccountListTableModel DeleteAccount");
-				e.printStackTrace();
-			}
-		}
-	}
-
-	public int AddAccount(String Name, String Description) {
-		int ErrorCode = 0;
-		PreparedStatement psInsert;
-
-		try {
-			psInsert = conn.prepareStatement("insert into account(name, description) values(?,?)");
-			psInsert.setString(1, Name);
-			psInsert.setString(2, Description);
-
-			psInsert.executeUpdate();
-			fireTableRowsInserted(getRowCount() + 1, getRowCount() + 1);
-		} catch (Throwable e) {
-			System.out.println(" . . . exception thrown: AddAccount");
-			e.printStackTrace();
-			ErrorCode = 1;
-		}
-
-		return ErrorCode;
-	}
-}

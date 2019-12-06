@@ -4,24 +4,6 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
-  <component name="MavenCompilerTasksManager">
-    <option name="beforeCompileTasks">
-      <set>
-        <MavenCompilerTask>
-          <option name="goal" value="org.codehaus.mojo:exec-maven-plugin:1.3.2:java" />
-          <option name="projectPath" value="$PROJECT_DIR$/pom.xml" />
-        </MavenCompilerTask>
-      </set>
-    </option>
-    <option name="afterCompileTasks">
-      <set>
-        <MavenCompilerTask>
-          <option name="goal" value="org.codehaus.mojo:exec-maven-plugin:1.3.2:java" />
-          <option name="projectPath" value="$PROJECT_DIR$/pom.xml" />
-        </MavenCompilerTask>
-      </set>
-    </option>
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="financejteam03" />
         <module name="FinanceJ-Team03" />
+        <module name="Financej-Team03" />
         <module name="financej-team03" />
       </profile>
     </annotationProcessing>
