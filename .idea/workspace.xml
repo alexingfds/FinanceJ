@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="">
+    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="changement 2:&#10; - partie compte &#10; - getValue dans la classe finance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" afterDir="false" />
@@ -13,7 +13,17 @@
       <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4d0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4d0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/AccountDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/etsmtl/log240/financej/AccountDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/AccountTotalTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/AccountTotalTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/FinanceJ.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -287,6 +297,12 @@
       <workItem from="1573834912141" duration="627000" />
       <workItem from="1574107633198" duration="45450000" />
       <workItem from="1574265202690" duration="3282000" />
+      <workItem from="1574268782858" duration="741000" />
+      <workItem from="1574270504261" duration="82000" />
+      <workItem from="1574868814324" duration="14059000" />
+      <workItem from="1574980486078" duration="16517000" />
+      <workItem from="1575501902473" duration="6433000" />
+      <workItem from="1575643412076" duration="6568000" />
     </task>
     <task id="LOCAL-00001" summary="Changement de projet husqua etape 4.3">
       <created>1568819538099</created>
@@ -414,7 +430,35 @@
       <option name="project" value="LOCAL" />
       <updated>1574218864885</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="creation de la classe « DerbyUtils »">
+      <created>1575054101094</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1575054101094</updated>
+    </task>
+    <task id="LOCAL-00020" summary="changement partie compte">
+      <created>1575609157951</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1575609157951</updated>
+    </task>
+    <task id="LOCAL-00021" summary="changement partie compte getValue&#10;modifier la methode update dans la classe finance">
+      <created>1575653503242</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1575653503242</updated>
+    </task>
+    <task id="LOCAL-00022" summary="changement 2:&#10; - partie compte &#10; - getValue dans la classe finance">
+      <created>1575655885701</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1575655885701</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +491,11 @@
     <MESSAGE value="TEST LEDGER COMPLET V1.0" />
     <MESSAGE value="TEST aCCOUNT COMPLET" />
     <MESSAGE value="TEST ledger COMPLET" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST ledger COMPLET" />
+    <MESSAGE value="creation de la classe « DerbyUtils »" />
+    <MESSAGE value="changement partie compte" />
+    <MESSAGE value="changement partie compte getValue&#10;modifier la methode update dans la classe finance" />
+    <MESSAGE value="changement 2:&#10; - partie compte &#10; - getValue dans la classe finance" />
+    <option name="LAST_COMMIT_MESSAGE" value="changement 2:&#10; - partie compte &#10; - getValue dans la classe finance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -468,6 +516,7 @@
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
       <option name="birdViewUpdateDelay" value="2000" />
+      <option name="knownFile0" value="file://$PROJECT_DIR$/../diagrammeSequenceLedger.suml" />
       <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
     </General>
     <Classdiagram>
