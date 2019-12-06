@@ -1,5 +1,6 @@
 package ca.etsmtl.log240.financej;
 
+import java.awt.*;
 import java.sql.*;
 
 //Déplacez tout le code d'accès à la BD d'AccountTableModel dans une nouvelle classe
@@ -8,6 +9,7 @@ public class AccountDAO {
 
     private String[] columnNames = {"Name", "Description"};
     private Connection conn;
+
 
 
     public AccountDAO(Connection DBConn) {
@@ -116,6 +118,25 @@ public class AccountDAO {
         return AccountResult;
     }
 
+    //ajouter le 6 dec ken
+    public  ResultSet UpdateTotal() {
+
+        ResultSet LedgerResult = null;
+        Statement s;
+        String TotalStr;
+
+        TotalStr = "$0.00";
+        if (conn != null) {
+            try {
+                s = conn.createStatement();
+                LedgerResult = s.executeQuery("select sum(amount) from ledger");
+            } catch (Throwable e) {
+                System.out.println(" . . . exception thrown: in AccountListTableModel getValueAt");
+                e.printStackTrace();
+            }
+        }
+        return LedgerResult;
+    }
 //
     //updateAccount()
     //deleteAccount()

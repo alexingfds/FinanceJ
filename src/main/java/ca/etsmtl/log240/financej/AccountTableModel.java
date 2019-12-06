@@ -59,8 +59,8 @@ public class AccountTableModel extends AbstractTableModel {
             if (conn != null) {
                 try {
                     s = conn.createStatement();
-                    AccountResult = s.executeQuery("select * from account order by name");
-                    //AccountResult=accountDAO.getAccount();
+                    //AccountResult = s.executeQuery("select * from account order by name");
+                     AccountResult=accountDAO.getAccount();
                     while (AccountResult.next()) {
                         if (CurrentRow == row) {
                             if (col == 0) {
