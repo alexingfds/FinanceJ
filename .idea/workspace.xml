@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c400.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4b0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4b0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4d0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4d0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/LedgerTest.java" afterDir="false" />
+    <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="changement 2:&#10; - partie compte &#10; - getValue dans la classe finance">
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/CategoryListTableModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$6$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Ledger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/LedgerListTableModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Reports$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Reports$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Reports$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Reports$4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Reports$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/Reports.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/TransactionAccountReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ca/etsmtl/log240/financej/TransactionCategoryReport.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -468,6 +483,7 @@
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
       <option name="birdViewUpdateDelay" value="2000" />
+      <option name="knownFile0" value="file://$PROJECT_DIR$/../diagrammeSequenceLedger.suml" />
       <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
     </General>
     <Classdiagram>
