@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="financejteam03" />
         <module name="FinanceJ-Team03" />
-        <module name="Financej-Team03" />
         <module name="financej-team03" />
+        <module name="Financej-Team03" />
+        <module name="financejteam03" />
       </profile>
     </annotationProcessing>
   </component>

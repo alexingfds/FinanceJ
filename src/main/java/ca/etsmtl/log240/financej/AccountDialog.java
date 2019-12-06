@@ -194,23 +194,50 @@ public class AccountDialog extends javax.swing.JDialog {
 //				System.out.println (b);
 //			}
 //		}
-	if(NameTextField.getText().length()==0){
+		String regExpression = "[a-zA-Z_0-9]*";
+		String nom=NameTextField.getText();
+		String desc=DescriptionTextField.getText();
+		boolean entreesValides=true;
 
-		JOptionPane.showMessageDialog(this,
-				"nom vide ",
-				"Error", JOptionPane.ERROR_MESSAGE);
-
-	}else {
-		ReturnCode = dataModel.AddAccount(NameTextField.getText(), DescriptionTextField.getText());
-		if (ReturnCode == 0) {
-			NameTextField.setText("");
-			DescriptionTextField.setText("");
-		} else {
+		//verifier si les valeurs entrer c'est des valeurs alphanumerique
+		//taille nom superieur ou egale 3
+		if(nom.length()<=3){
+			entreesValides=false;
 			JOptionPane.showMessageDialog(this,
-					"Error Adding account to database.  Make sure the account name you specified does not already exist.",
+					"nom valide est un de valeur alphanumerique et contient au mois 3 caracteres ",
 					"Error", JOptionPane.ERROR_MESSAGE);
+
 		}
-	}
+		//taille description superieur ou egale 5
+		if(desc.length()<=5){
+			entreesValides=false;
+			JOptionPane.showMessageDialog(this,
+					"Description valide: alphanumerique et contient au mois 5 caracteres ",
+					"Error", JOptionPane.ERROR_MESSAGE);
+
+		}
+		//valeur alphanumerique
+		if(!nom.matches(regExpression) || !desc.matches(regExpression) ){
+			entreesValides=false;
+			JOptionPane.showMessageDialog(this,
+					"le nom et description doivent etre des valeurs alphanumerique",
+					"Error", JOptionPane.ERROR_MESSAGE);
+
+
+		}
+		//ajouter le compte si les valeurs d'entreés sont valide
+		if(entreesValides){
+				ReturnCode = dataModel.AddAccount(NameTextField.getText(), DescriptionTextField.getText());
+				if (ReturnCode == 0) {
+					NameTextField.setText("");
+					DescriptionTextField.setText("");
+				} else {
+					JOptionPane.showMessageDialog(this,
+							"Error Adding account to database.  Make sure the account name you specified does not already exist.",
+							"Error", JOptionPane.ERROR_MESSAGE);
+				}
+			}
+
 	}//GEN-LAST:event_AddAccountButtonActionPerformed
 
 	/**
