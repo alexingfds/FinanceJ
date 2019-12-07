@@ -181,16 +181,62 @@ public class CategoryDialog extends javax.swing.JDialog {
          *  // ken ajouter code de teste les validite des valeur ******************************
          *
          * **/
+        /**
+         *  verifier les valeurs d'entrées sont valide ******************************
+         * correction des erreurs
+         * **/
+        String regExpression = "[a-zA-Z_0-9 ]*";
+        //String regExpression = "[a-zA-Z_0-9]*";
+        String nom=NameTextField.getText();
+        String desc=DescriptionTextField.getText();
 
-        ReturnCode = dataModel.AddCategory(NameTextField.getText(), DescriptionTextField.getText(), Budget);
-        if (ReturnCode == 0) {
-            NameTextField.setText("");
-            DescriptionTextField.setText("");
-            BudgetTextField.setText("");
-        } else {
+        boolean entreesValides=true;
+
+        //verifier si les valeurs entrer c'est des valeurs alphanumerique
+        //nom valide entre 3 ert 25 caracteres
+        if(nom.length()<3||nom.length()>25 ){
+            entreesValides=false;
             JOptionPane.showMessageDialog(this,
-                    "Error Adding category to database.  Make sure the category name you specified does not already exist.",
+                    "nom valide entre 3 et 25 caracteres ",
                     "Error", JOptionPane.ERROR_MESSAGE);
+
+        }
+        //taille description valide entre 5 et 255
+        if(desc.length()<5 ||desc.length()>255 ){
+            entreesValides=false;
+            JOptionPane.showMessageDialog(this,
+                    "Description valide au mois 5 caracteres ",
+                    "Error", JOptionPane.ERROR_MESSAGE);
+
+        }
+        //valeur alphanumerique
+        if(!nom.trim().matches(regExpression) || !desc.trim().matches(regExpression) ){
+            entreesValides=false;
+            JOptionPane.showMessageDialog(this,
+                    "le nom et description doivent etre des valeurs alphanumerique",
+                    "Error", JOptionPane.ERROR_MESSAGE);
+
+
+        }
+        if( Budget<0){
+            entreesValides=false;
+            JOptionPane.showMessageDialog(this,
+                    "le Budget doit etre positif",
+                    "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        //ajouter le categorie si les valeurs d'entreés sont valide
+
+        if(entreesValides) {
+            ReturnCode = dataModel.AddCategory(NameTextField.getText(), DescriptionTextField.getText(), Budget);
+            if (ReturnCode == 0) {
+                NameTextField.setText("");
+                DescriptionTextField.setText("");
+                BudgetTextField.setText("");
+            } else {
+                JOptionPane.showMessageDialog(this,
+                        "Error Adding category to database.  Make sure the category name you specified does not already exist.",
+                        "Error", JOptionPane.ERROR_MESSAGE);
+            }
         }
 }//GEN-LAST:event_AddCategoryButtonActionPerformed
 

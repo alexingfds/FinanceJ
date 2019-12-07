@@ -183,41 +183,35 @@ public class AccountDialog extends javax.swing.JDialog {
 	private void AddAccountButtonActionPerformed() {//GEN-FIRST:event_AddAccountButtonActionPerformed
 		int ReturnCode;
 
-//************** ken
-//		public class Test {
-//			public static void main (String [] args) {
-//				String regExpression = "[a-zA-Z_0-9]*";
-//				String sample = "abcde";
-//
-//				boolean b = sample.matches(regExpression);
-//
-//				System.out.println (b);
-//			}
-//		}
-		String regExpression = "[a-zA-Z_0-9]*";
+		/**
+		 *  verifier les valeurs d'entrées sont valide ******************************
+		 * correction des erreurs
+		 * **/
+		String regExpression = "[a-zA-Z_0-9 ]*";
+		//String regExpression = "[a-zA-Z_0-9]*";
 		String nom=NameTextField.getText();
 		String desc=DescriptionTextField.getText();
 		boolean entreesValides=true;
 
 		//verifier si les valeurs entrer c'est des valeurs alphanumerique
-		//taille nom superieur ou egale 3
-		if(nom.length()<=3){
+		//nom valide entre 3 ert 25 caracteres
+		if(nom.length()<3||nom.length()>25 ){
 			entreesValides=false;
 			JOptionPane.showMessageDialog(this,
-					"nom valide est un de valeur alphanumerique et contient au mois 3 caracteres ",
+					"nom valide entre 3 et 25 caracteres ",
 					"Error", JOptionPane.ERROR_MESSAGE);
 
 		}
-		//taille description superieur ou egale 5
-		if(desc.length()<=5){
+		//taille description valide entre 5 et 255
+		if(desc.length()<5 ||desc.length()>255 ){
 			entreesValides=false;
 			JOptionPane.showMessageDialog(this,
-					"Description valide: alphanumerique et contient au mois 5 caracteres ",
+					"Description valide au mois 5 caracteres ",
 					"Error", JOptionPane.ERROR_MESSAGE);
 
 		}
 		//valeur alphanumerique
-		if(!nom.matches(regExpression) || !desc.matches(regExpression) ){
+		if(!nom.trim().matches(regExpression) || !desc.trim().matches(regExpression) ){
 			entreesValides=false;
 			JOptionPane.showMessageDialog(this,
 					"le nom et description doivent etre des valeurs alphanumerique",
