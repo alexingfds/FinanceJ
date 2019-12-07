@@ -7,15 +7,18 @@ import java.sql.*;
 // AccountDAO qui doit être la seule classe (liée aux comptes) à connaître l'existence de la BD:
 public class AccountDAO {
 
-    private String[] columnNames = {"Name", "Description"};
+   // private String[] columnNames = {"Name", "Description"};
     private Connection conn;
 
-
+    /***********     constructeur
+     * * **/
 
     public AccountDAO(Connection DBConn) {
         conn = DBConn;
 
     }
+    /***********     modifier compte
+     * * **/
 
     public void updateAccount(Object description , String AccountName) throws SQLException {
 
@@ -31,6 +34,8 @@ public class AccountDAO {
 
 
     }
+    /***********     Ajouter compte
+     * * **/
     public int addAccount(String Name, String Description) {
         int ErrorCode = 0;
         PreparedStatement psInsert;
@@ -48,7 +53,8 @@ public class AccountDAO {
 
         return ErrorCode;
     }
-
+    /***********     supprimer compte
+     * * **/
     public void deleteAccount( String AccountName) {
         Statement s;
         String SQLString;
@@ -66,57 +72,60 @@ public class AccountDAO {
             }
         }
     }
+    /***********     recuperer compte
+     * * **/
 
-
-    public  ResultSet  getAccount(){
-
-        ResultSet AccountResult = null;
+    public Object getCategory(int row, int col) {
+        ResultSet AccountResult;
         Statement s;
-       int CurrentRow = 0;
+        int CurrentRow = 0;
 
         if (conn != null) {
             try {
                 s = conn.createStatement();
                 AccountResult = s.executeQuery("select * from account order by name");
-               // return AccountResult;
-//                while (AccountResult.next()) {
-//                    if (CurrentRow == row) {
-//                        if (col == 0) {
-//                            return AccountResult.getString(1);
-//                        } else if (col == 1) {
-//                            return AccountResult.getString(2);
-//                        }
-//                    }
-//                    CurrentRow++;
-//                }
+                while (AccountResult.next()) {
+                    if (CurrentRow == row) {
+                        if (col == 0) {
+                            return AccountResult.getString(1);
+                        } else if (col == 1) {
+                            return AccountResult.getString(2);
+                        }
+                    }
+                    CurrentRow++;
+                }
             } catch (Throwable e) {
                 System.out.println(" . . . exception thrown: in AccountListTableModel getValueAt");
                 e.printStackTrace();
             }
         }
-        return AccountResult;
+        return "";
     }
 
-    public ResultSet getRowCount() {
-        ResultSet AccountResult = null;
+    /***********
+     * * **/
+
+    public int getRowCount() {
+        ResultSet AccountResult;
         Statement s;
 
         if (conn != null) {
             try {
                 s = conn.createStatement();
                 AccountResult = s.executeQuery("select count(name) from account");
-//                while (AccountResult.next()) {
-//                    return AccountResult.getInt(1);
-//                }
+                while (AccountResult.next()) {
+                    return AccountResult.getInt(1);
+                }
             } catch (Throwable e) {
                 System.out.println(" . . . exception thrown: in AccountListTableModel getRowCount");
                 e.printStackTrace();
             }
         }
 
-        return AccountResult;
+        return 0;
     }
-
+    /***********     modifier total
+     * * **/
     //ajouter le 6 dec ken
     public  ResultSet UpdateTotal() {
 
@@ -136,6 +145,8 @@ public class AccountDAO {
         }
         return LedgerResult;
     }
+    /***********     recuperer compte et le total(somme)
+     * * **/
     public ResultSet getValueAt(){
 
         ResultSet AccountResult = null;

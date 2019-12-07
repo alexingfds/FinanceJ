@@ -31,7 +31,7 @@ public class FinanceJ extends javax.swing.JFrame {
 
     //private Login login;
     private AccountDialog AccountDialog;
-    private Category CategoryDialog;
+    private ca.etsmtl.log240.financej.CategoryDialog CategoryDialog;
     private Ledger LedgerDialog;
     private Reports ReportsDialog;
     private AccountTotalTableModel dataModel;
@@ -91,7 +91,7 @@ public class FinanceJ extends javax.swing.JFrame {
         AccountDialog.setVisible(false);
         AccountDialog.SetDBConnection(conn);
         
-        CategoryDialog = new Category(this, true);
+        CategoryDialog = new CategoryDialog(this, true);
         CategoryDialog.setVisible(false);
         CategoryDialog.SetDBConnection(conn);
         

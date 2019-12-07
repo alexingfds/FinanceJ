@@ -26,24 +26,8 @@ public class AccountTableModel extends AbstractTableModel {
         }
 
         public int getRowCount() {
-            ResultSet AccountResult;
-            Statement s;
 
-            if (conn != null) {
-                try {
-                    s = conn.createStatement();
-                   // AccountResult = s.executeQuery("select count(name) from account");
-                    AccountResult = accountDAO.getRowCount();
-                    while (AccountResult.next()) {
-                        return AccountResult.getInt(1);
-                    }
-                } catch (Throwable e) {
-                    System.out.println(" . . . exception thrown: in AccountListTableModel getRowCount");
-                    e.printStackTrace();
-                }
-            }
-
-            return 0;
+            return accountDAO.getRowCount();
         }
 
         public String getColumnName(int col) {
@@ -51,32 +35,8 @@ public class AccountTableModel extends AbstractTableModel {
         }
 
         public Object getValueAt(int row, int col) {
-           // return accountDAO.getAccount(row,col);
-            ResultSet AccountResult;
-            Statement s;
-            int CurrentRow = 0;
 
-            if (conn != null) {
-                try {
-                    s = conn.createStatement();
-                    //AccountResult = s.executeQuery("select * from account order by name");
-                     AccountResult=accountDAO.getAccount();
-                    while (AccountResult.next()) {
-                        if (CurrentRow == row) {
-                            if (col == 0) {
-                                return AccountResult.getString(1);
-                            } else if (col == 1) {
-                                return AccountResult.getString(2);
-                            }
-                        }
-                        CurrentRow++;
-                    }
-                } catch (Throwable e) {
-                    System.out.println(" . . . exception thrown: in AccountListTableModel getValueAt");
-                    e.printStackTrace();
-                }
-            }
-            return "";
+            return accountDAO.getCategory(row,col);
         }
 
         public Class getColumnClass(int c) {
@@ -128,6 +88,8 @@ public class AccountTableModel extends AbstractTableModel {
                   fireTableRowsInserted(getRowCount() + 1, getRowCount() + 1);
             return ErrorCode;
         }
+
+
     }
 
 
