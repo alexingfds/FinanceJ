@@ -171,26 +171,30 @@ public class CategoryDialog extends javax.swing.JDialog {
     private void AddCategoryButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddCategoryButtonActionPerformed
         int ReturnCode;
         String BudgetValue;
-        float Budget;
+        float Budget = 0;
         
-        BudgetValue = BudgetTextField.getText();
-        Budget = Float.valueOf(BudgetValue.trim()).floatValue();
 
-
-        /**
-         *  // ken ajouter code de teste les validite des valeur ******************************
-         *
-         * **/
         /**
          *  verifier les valeurs d'entrées sont valide ******************************
          * correction des erreurs
          * **/
-        String regExpression = "[a-zA-Z_0-9 ]*";
-        //String regExpression = "[a-zA-Z_0-9]*";
         String nom=NameTextField.getText();
         String desc=DescriptionTextField.getText();
 
         boolean entreesValides=true;
+        String regExpression = "[a-zA-Z_0-9 ]*";
+        String regExpression2 = "[0-9]*";
+
+        BudgetValue = BudgetTextField.getText();
+        if(BudgetValue.length()==0 ||!BudgetValue.matches(regExpression2)){
+            JOptionPane.showMessageDialog(this,
+                    "Entrer un Budget valide SVP ",
+                    "Error", JOptionPane.ERROR_MESSAGE);
+            entreesValides=false;
+        }else
+            Budget = Float.valueOf(BudgetValue.trim()).floatValue();
+
+
 
         //verifier si les valeurs entrer c'est des valeurs alphanumerique
         //nom valide entre 3 ert 25 caracteres
