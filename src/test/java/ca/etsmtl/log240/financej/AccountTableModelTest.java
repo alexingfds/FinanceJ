@@ -42,6 +42,8 @@ public class AccountTableModelTest {
         assertEquals(comp.getRowCount(), 0);
     }
 
+
+
     @Test
     public void getColumnCountTest(){
         setupDb();

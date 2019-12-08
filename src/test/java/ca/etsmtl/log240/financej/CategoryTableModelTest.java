@@ -53,7 +53,7 @@ public class CategoryTableModelTest {
     @Test
     public void DeleteCategoryTest(){
         setupDb();
-        cat.AddCategory("Firstcat", "DescriptiFistcat", 180);
+        cat.AddCategory("Firstcat", "DescriptiFistcat", 200);
         cat.DeleteCategory(0);
         assertEquals(0, cat.getRowCount());
     }
