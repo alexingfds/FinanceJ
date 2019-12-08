@@ -8,7 +8,6 @@ import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 public class AccountTableModelTest {
-    private static DerbyUtils derby;
     private static Connection conn ;
     private static AccountTableModel comp;
 

@@ -3,8 +3,6 @@ import org.junit.*;
 import java.sql.Connection;
 import static org.junit.Assert.*;
 public class CategoryTableModelTest {
-
-    private static DerbyUtils derby;
     private static Connection conn ;
     private static CategoryTableModel cat;
 
