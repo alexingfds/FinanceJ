@@ -34,7 +34,7 @@ public class AccountTableModelTest {
         setupDb();
         assertEquals("Name", comp.getColumnName(0));
         assertEquals("Description", comp.getColumnName(1));
-        assertEquals("Budget", comp.getColumnName(2));
+
     }
     @Test
     public void getRowCountTest(){

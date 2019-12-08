@@ -31,8 +31,8 @@
         <summaryresult date="2019-10-20" filecount="7" statvalue="118" type="pmd"/>
         <summaryresult date="2019-12-07" filecount="13" statvalue="1693" type="checkstyle"/>
         <summaryresult date="2019-12-07" filecount="12" statvalue="131" type="pmd"/>
-        <summaryresult date="2019-12-07" filecount="17" statvalue="52" type="cobertura-line"/>
-        <summaryresult date="2019-12-07" filecount="17" statvalue="21" type="cobertura-branch"/>
+        <summaryresult date="2019-12-07" filecount="17" statvalue="54" type="cobertura-line"/>
+        <summaryresult date="2019-12-07" filecount="17" statvalue="24" type="cobertura-branch"/>
     </summary>
     <file id="ca_etsmtl_log240_financej_Account.java" path="ca/etsmtl/log240/financej/Account.java">
         <result date="2019-09-17" statvalue="507" type="checkstyle"/>
@@ -108,6 +108,7 @@
         <result date="2019-10-19" statvalue="264" type="checkstyle"/>
         <result date="2019-10-20" statvalue="221" type="checkstyle"/>
         <result date="2019-10-20" statvalue="24" type="pmd"/>
+        <result date="2019-12-07" statvalue="92" type="cobertura-line"/>
         <result date="2019-12-07" statvalue="184" type="checkstyle"/>
         <result date="2019-12-07" statvalue="21" type="pmd"/>
         <result date="2019-12-07" statvalue="16" type="cobertura-line"/>
@@ -127,6 +128,8 @@
         <result date="2019-10-19" statvalue="29" type="pmd"/>
         <result date="2019-10-20" statvalue="345" type="checkstyle"/>
         <result date="2019-10-20" statvalue="29" type="pmd"/>
+        <result date="2019-12-07" statvalue="10" type="cobertura-line"/>
+        <result date="2019-12-07" statvalue="1" type="cobertura-branch"/>
         <result date="2019-12-07" statvalue="344" type="checkstyle"/>
         <result date="2019-12-07" statvalue="28" type="pmd"/>
         <result date="2019-12-07" statvalue="79" type="cobertura-line"/>
@@ -158,8 +161,8 @@
     <file id="ca_etsmtl_log240_financej_AccountDAO.java" path="ca/etsmtl/log240/financej/AccountDAO.java">
         <result date="2019-12-07" statvalue="75" type="checkstyle"/>
         <result date="2019-12-07" statvalue="12" type="pmd"/>
-        <result date="2019-12-07" statvalue="33" type="cobertura-line"/>
-        <result date="2019-12-07" statvalue="15" type="cobertura-branch"/>
+        <result date="2019-12-07" statvalue="50" type="cobertura-line"/>
+        <result date="2019-12-07" statvalue="25" type="cobertura-branch"/>
     </file>
     <file id="ca_etsmtl_log240_financej_AccountDialog.java" path="ca/etsmtl/log240/financej/AccountDialog.java">
         <result date="2019-12-07" statvalue="394" type="checkstyle"/>
@@ -170,14 +173,14 @@
     <file id="ca_etsmtl_log240_financej_AccountTableModel.java" path="ca/etsmtl/log240/financej/AccountTableModel.java">
         <result date="2019-12-07" statvalue="56" type="checkstyle"/>
         <result date="2019-12-07" statvalue="3" type="pmd"/>
-        <result date="2019-12-07" statvalue="44" type="cobertura-line"/>
-        <result date="2019-12-07" statvalue="25" type="cobertura-branch"/>
+        <result date="2019-12-07" statvalue="70" type="cobertura-line"/>
+        <result date="2019-12-07" statvalue="75" type="cobertura-branch"/>
     </file>
     <file id="ca_etsmtl_log240_financej_CategoryDAO.java" path="ca/etsmtl/log240/financej/CategoryDAO.java">
         <result date="2019-12-07" statvalue="66" type="checkstyle"/>
         <result date="2019-12-07" statvalue="8" type="pmd"/>
-        <result date="2019-12-07" statvalue="25" type="cobertura-line"/>
-        <result date="2019-12-07" statvalue="4" type="cobertura-branch"/>
+        <result date="2019-12-07" statvalue="44" type="cobertura-line"/>
+        <result date="2019-12-07" statvalue="13" type="cobertura-branch"/>
     </file>
     <file id="ca_etsmtl_log240_financej_CategoryDialog.java" path="ca/etsmtl/log240/financej/CategoryDialog.java">
         <result date="2019-12-07" statvalue="177" type="checkstyle"/>
@@ -188,7 +191,8 @@
     <file id="ca_etsmtl_log240_financej_CategoryTableModel.java" path="ca/etsmtl/log240/financej/CategoryTableModel.java">
         <result date="2019-12-07" statvalue="55" type="checkstyle"/>
         <result date="2019-12-07" statvalue="2" type="pmd"/>
-        <result date="2019-12-07" statvalue="40" type="cobertura-line"/>
+        <result date="2019-12-07" statvalue="74" type="cobertura-line"/>
+        <result date="2019-12-07" statvalue="100" type="cobertura-branch"/>
     </file>
     <file id="ca_etsmtl_log240_financej_DerbyUtils.java" path="ca/etsmtl/log240/financej/DerbyUtils.java">
         <result date="2019-12-07" statvalue="65" type="checkstyle"/>
