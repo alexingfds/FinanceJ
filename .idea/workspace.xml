@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffd46e7e-6e8a-432d-8501-4a92ffeea7b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinanceJDB/db.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/AccountDialogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/AccountTableModelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryDialogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryTableModelTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c490.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4b0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4b0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/FinanceJDB/seg0/c4c1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qalab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/qalab.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +84,7 @@
       <recent name="ca.etsmtl.log240.financej" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CategoryTest">
+  <component name="RunManager" selected="JUnit.AccountTableModelTest.getColumnClassTest">
     <configuration type="JUnit" factoryName="JUnit">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
@@ -114,6 +128,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AccountTableModelTest.getColumnClassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinanceJ-Team03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.AccountTableModelTest" />
+      <option name="METHOD_NAME" value="getColumnClassTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AccountTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
@@ -129,7 +159,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoryTableModelTest.DeleteCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
@@ -138,44 +168,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.CategoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LedgerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinanceJ-Team03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LedgerTest.testL15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinanceJ-Team03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
-      <option name="METHOD_NAME" value="testL15" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.CategoryTableModelTest" />
+      <option name="METHOD_NAME" value="DeleteCategoryTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LedgerTest.testL16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoryTableModelTest.getColumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
@@ -184,14 +184,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
-      <option name="METHOD_NAME" value="testL16" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.CategoryTableModelTest" />
+      <option name="METHOD_NAME" value="getColumTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LedgerTest.testL9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoryTableModelTest.getValueAttest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinanceJ-Team03" />
       <extension name="coverage">
         <pattern>
@@ -200,8 +200,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
-      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.LedgerTest" />
-      <option name="METHOD_NAME" value="testL9" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.CategoryTableModelTest" />
+      <option name="METHOD_NAME" value="getValueAttest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryTableModelTest.isCellEditableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinanceJ-Team03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.etsmtl.log240.financej.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.etsmtl.log240.financej" />
+      <option name="MAIN_CLASS_NAME" value="ca.etsmtl.log240.financej.CategoryTableModelTest" />
+      <option name="METHOD_NAME" value="isCellEditableTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -211,19 +227,19 @@
       <item itemvalue="Application.Login" />
       <item itemvalue="Application.Account" />
       <item itemvalue="JUnit.AccountTest" />
-      <item itemvalue="JUnit.LedgerTest" />
-      <item itemvalue="JUnit.LedgerTest.testL16" />
-      <item itemvalue="JUnit.LedgerTest.testL9" />
-      <item itemvalue="JUnit.LedgerTest.testL15" />
-      <item itemvalue="JUnit.CategoryTest" />
+      <item itemvalue="JUnit.CategoryTableModelTest.getValueAttest" />
+      <item itemvalue="JUnit.CategoryTableModelTest.getColumTest" />
+      <item itemvalue="JUnit.CategoryTableModelTest.isCellEditableTest" />
+      <item itemvalue="JUnit.CategoryTableModelTest.DeleteCategoryTest" />
+      <item itemvalue="JUnit.AccountTableModelTest.getColumnClassTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CategoryTest" />
-        <item itemvalue="JUnit.LedgerTest" />
-        <item itemvalue="JUnit.LedgerTest.testL15" />
-        <item itemvalue="JUnit.LedgerTest.testL9" />
-        <item itemvalue="JUnit.LedgerTest.testL16" />
+        <item itemvalue="JUnit.AccountTableModelTest.getColumnClassTest" />
+        <item itemvalue="JUnit.CategoryTableModelTest.DeleteCategoryTest" />
+        <item itemvalue="JUnit.CategoryTableModelTest.isCellEditableTest" />
+        <item itemvalue="JUnit.CategoryTableModelTest.getColumTest" />
+        <item itemvalue="JUnit.CategoryTableModelTest.getValueAttest" />
       </list>
     </recent_temporary>
   </component>
@@ -411,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575666777995</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Lab 4 lastbranch">
+      <created>1575766460300</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1575766460300</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,33 +498,61 @@
     <MESSAGE value="TEST aCCOUNT COMPLET" />
     <MESSAGE value="TEST ledger COMPLET" />
     <MESSAGE value="Lab 4 jusqu'a account" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 4 jusqu'a account" />
+    <MESSAGE value="Lab 4 lastbranch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 4 lastbranch" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1575766146251">
+    <state x="385" y="6" key="CommitChangelistDialog2" timestamp="1575766459723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575766146251" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1575766146251">
+    <state x="385" y="6" key="CommitChangelistDialog2/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575766459723" />
+    <state width="1493" height="156" key="GridCell.Tab.0.bottom" timestamp="1575774954086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575766146251" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1575766146251">
+    <state width="1493" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575774954086" />
+    <state width="1493" height="156" key="GridCell.Tab.0.center" timestamp="1575774954086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575766146251" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1575766146251">
+    <state width="1493" height="156" key="GridCell.Tab.0.center/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575774954086" />
+    <state width="1493" height="156" key="GridCell.Tab.0.left" timestamp="1575774954086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575766146251" />
+    <state width="1493" height="156" key="GridCell.Tab.0.left/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575774954086" />
+    <state width="1493" height="156" key="GridCell.Tab.0.right" timestamp="1575774954086">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="156" key="GridCell.Tab.0.right/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575774954086" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1575766568535">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575766568535" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1575766470115">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575766470115" />
+    <state x="-954" y="-338" width="940" height="636" key="dock-window-1" timestamp="1575772741531">
+      <screen x="-1360" y="-338" width="1360" height="728" />
+    </state>
+    <state x="-954" y="-338" width="940" height="636" key="dock-window-1/0.0.1536.824/-1360.-338.1360.728@0.0.1536.824" timestamp="1575772741531" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryTest.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="8" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryTableModelTest.java</url>
+          <line>42</line>
+          <properties class="ca.etsmtl.log240.financej.CategoryTableModelTest" method="getColumnCountTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/ca/etsmtl/log240/financej/CategoryTableModelTest.java</url>
+          <line>55</line>
+          <properties class="ca.etsmtl.log240.financej.CategoryTableModelTest" method="DeleteCategoryTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
