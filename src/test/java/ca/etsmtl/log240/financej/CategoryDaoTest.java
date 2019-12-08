@@ -9,6 +9,7 @@ public class CategoryDaoTest {
     @Test
 
     public void  testConnection(){
+        //test connexion
         Connection  conn =null;
         conn =DerbyUtils.getInstance().getConnexion();
         assertNotNull(conn);
