@@ -108,6 +108,7 @@
         <result date="2019-10-19" statvalue="264" type="checkstyle"/>
         <result date="2019-10-20" statvalue="221" type="checkstyle"/>
         <result date="2019-10-20" statvalue="24" type="pmd"/>
+        <result date="2019-12-07" statvalue="16" type="cobertura-line"/>
         <result date="2019-12-07" statvalue="92" type="cobertura-line"/>
         <result date="2019-12-07" statvalue="184" type="checkstyle"/>
         <result date="2019-12-07" statvalue="21" type="pmd"/>
@@ -128,7 +129,9 @@
         <result date="2019-10-19" statvalue="29" type="pmd"/>
         <result date="2019-10-20" statvalue="345" type="checkstyle"/>
         <result date="2019-10-20" statvalue="29" type="pmd"/>
+        <result date="2019-12-07" statvalue="79" type="cobertura-line"/>
         <result date="2019-12-07" statvalue="10" type="cobertura-line"/>
+        <result date="2019-12-07" statvalue="22" type="cobertura-branch"/>
         <result date="2019-12-07" statvalue="1" type="cobertura-branch"/>
         <result date="2019-12-07" statvalue="344" type="checkstyle"/>
         <result date="2019-12-07" statvalue="28" type="pmd"/>
