@@ -5,12 +5,15 @@ package ca.etsmtl.log240.financej;
  * Created on March 9, 2008, 11:40 PM
  */
 
-import java.sql.*;
-import java.util.*;
-import javax.swing.table.*;
 import javax.swing.*;
+import javax.swing.table.AbstractTableModel;
+import javax.swing.table.TableColumn;
+import java.awt.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.text.SimpleDateFormat;
-import java.awt.Color;
 
 /**
  *
@@ -92,23 +95,30 @@ public class Ledger extends javax.swing.JDialog {
     private void initComponents() {
 
         CloseButton = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        JScrollPane jScrollPane1 = new JScrollPane();
         LedgerTable = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
         AddTransactionButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         DateTextField = new javax.swing.JTextField();
+        DateTextField.setName("DATE_TEXT_FIELD");
         jLabel3 = new javax.swing.JLabel();
         DescriptionTextField = new javax.swing.JTextField();
+        DescriptionTextField.setName("DESCRIPTION_TEXT_FIELD");
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         AmountTextField = new javax.swing.JTextField();
+        AmountTextField.setName("AMOUNT_TEXT_FIELD");
         jLabel6 = new javax.swing.JLabel();
         PayeeTextField = new javax.swing.JTextField();
+        PayeeTextField.setName("PAYEE_TEXT_FIELD");
         RecCheckBox = new javax.swing.JCheckBox();
+        RecCheckBox.setName("REC_CHECK_BOX");
         CategoryComboBox = new javax.swing.JComboBox();
+        CategoryComboBox.setName("CATEGORY_COMBO_BOX");
         DeleteTransactionButton = new javax.swing.JButton();
         AccountsComboBox = new javax.swing.JComboBox();
+        AccountsComboBox.setName("ACCOUNTS_COMBO_BOX");
         jLabel1 = new javax.swing.JLabel();
         TotalLabel = new javax.swing.JLabel();
 
@@ -234,7 +244,7 @@ public class Ledger extends javax.swing.JDialog {
         DeleteTransactionButton.setText("Delete Transaction");
         DeleteTransactionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DeleteTransactionButtonActionPerformed(evt);
+                DeleteTransactionButtonActionPerformed();
             }
         });
 
@@ -364,7 +374,7 @@ public class Ledger extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_AddTransactionButtonActionPerformed
 
-    private void DeleteTransactionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteTransactionButtonActionPerformed
+    private void DeleteTransactionButtonActionPerformed() {//GEN-FIRST:event_DeleteTransactionButtonActionPerformed
         if (LedgerTable.getSelectionModel().getLeadSelectionIndex() >= 0) {
             System.out.println("delete row:" + LedgerTable.getSelectionModel().getLeadSelectionIndex());
             dataModel.DeleteLedger(LedgerTable.getSelectionModel().getLeadSelectionIndex());
@@ -422,7 +432,6 @@ public class Ledger extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
 
@@ -492,11 +501,7 @@ class LedgerListTableModel extends AbstractTableModel {
                             Boolean Rec;
 
                             TempRecValue = LedgerResult.getInt(2);
-                            if (TempRecValue == 0) {
-                                Rec = false;
-                            } else {
-                                Rec = true;
-                            }
+                            Rec = TempRecValue != 0;
                             return Rec;
                         } else if (col == 2) {
                             java.sql.Date TDate;

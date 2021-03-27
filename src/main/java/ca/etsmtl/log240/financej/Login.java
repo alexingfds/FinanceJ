@@ -60,7 +60,7 @@ public class Login extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
         String userName = userName_text.getText();
         String password = password_text.getText();
-        if (userName.trim().equals("admin") && password.trim().equals("admin")) {
+        if (userName.trim().equals("admin") && password.trim().equals("admin") || userName.trim().equals("user") && password.trim().equals("user")) {
             FinanceJ Fj = new FinanceJ();
             Fj.setVisible(true);
             this.hide();
